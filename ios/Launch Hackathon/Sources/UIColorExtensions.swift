@@ -74,7 +74,15 @@ extension UIColor {
         let alpha = randomAlpha ? CGFloat.random() : 1.0
         return UIColor(red: randomRed, green: randomGreen, blue: randomBlue, alpha: alpha)
     }
-   
+  
+  public static func randomColorWithAlpha(alpha: CGFloat) -> UIColor {
+    let randomRed = CGFloat.random()
+    let randomGreen = CGFloat.random()
+    let randomBlue = CGFloat.random()
+    return UIColor(red: randomRed, green: randomGreen, blue: randomBlue, alpha: alpha)
+  }
+
+  
 }
 
 private extension CGFloat {
