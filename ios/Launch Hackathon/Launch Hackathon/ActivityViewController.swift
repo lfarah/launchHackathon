@@ -91,7 +91,7 @@ class ActivityViewController: UIViewController {
     }
     
     func createTableView() {
-        activityTableView = ActivityTableView(frame: CGRect(x: containerView.x, y: bannerHeight, w: containerView.w, h: containerView.h - bannerHeight), data: ["1", "2'","1", "2'","1", "2'","1", "2'","1", "2'"])
+        activityTableView = ActivityTableView(frame: CGRect(x: containerView.x, y: bannerHeight, w: containerView.w, h: containerView.h - bannerHeight), data: ["Golden Gate Bridge", "Golden Gate Bridge","Golden Gate Bridge", "Golden Gate Bridge","Golden Gate Bridge", "Golden Gate Bridge'","Golden Gate Bridge", "Golden Gate Bridge","Golden Gate Bridge", "Golden Gate Bridge"])
         containerView.addSubview(activityTableView)
         activityTableView.hidden = true
     }

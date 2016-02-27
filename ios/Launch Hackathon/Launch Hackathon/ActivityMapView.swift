@@ -13,8 +13,11 @@ class ActivityMapView: UIView {
     
     var mapView: AGSMapView!
     var graphicLayer:AGSGraphicsLayer!
-    var locator:AGSLocator!
+//    var locator:AGSLocator!
     var calloutTemplate:AGSCalloutTemplate!
+    
+    var selectedGraphic: AGSGraphic!
+
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -30,6 +33,7 @@ class ActivityMapView: UIView {
     func createMap() {
         mapView = AGSMapView(x: 0, y: 0, w: frame.width, h: frame.height)
         self.mapView.layerDelegate = self
+        self.mapView.callout.delegate = self
         
         let url = NSURL(string: "http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer")
         let tiledLayer = AGSTiledMapServiceLayer(URL: url)
@@ -49,41 +53,27 @@ class ActivityMapView: UIView {
             let pushpin = AGSPictureMarkerSymbol(imageNamed: "BluePushpin.png")
             pushpin.offset = CGPointMake(9, 16)
             pushpin.leaderPoint = CGPointMake(-9, 11)
+            
+            let geometryEngine = AGSGeometryEngine()
+
 //            let renderer = AGSSimpleRenderer(symbol: pushpin)
 //            self.graphicLayer.renderer = renderer
             
             let newPoint = AGSPoint(x: -122.4194155,y: 37.7749295, spatialReference: AGSSpatialReference.wgs84SpatialReference())
-            let graphic = AGSGraphic(geometry: newPoint, symbol: pushpin, attributes: nil)
+            let reprojectedPoint = geometryEngine.projectGeometry(newPoint, toSpatialReference: AGSSpatialReference.webMercatorSpatialReference())
+            let graphic = AGSGraphic(geometry: reprojectedPoint, symbol: pushpin, attributes: nil)
             graphicLayer.addGraphic(graphic)
+            
+            self.calloutTemplate = AGSCalloutTemplate()
+            self.calloutTemplate.titleTemplate = "FurkWorld"
+            self.calloutTemplate.detailTemplate = "San Francisco"
+            self.graphicLayer.calloutDelegate = self.calloutTemplate
+            self.mapView.zoomToGeometry(newPoint, withPadding: 5, animated: false)
         }
         else {
             //Clear out previous results if we already have a graphics layer
             self.graphicLayer.removeAllGraphics()
         }
-        
-//        if self.locator == nil {
-//            //Create the AGSLocator pointing to the geocode service on ArcGIS Online
-//            //Set the delegate so that we are informed through AGSLocatorDelegate methods
-//            let url = NSURL(string: "http://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer")
-//            self.locator = AGSLocator(URL: url)
-//            self.locator.delegate = self
-//        }
-
-
-        
-
-//        mapView.centerAtPoint(newPoint, animated: false)
-        
-        //Set the parameters
-//        let params = AGSLocatorFindParameters()
-//        params.text = "popo"
-//        params.outFields = ["*"]
-//        params.outSpatialReference = self.mapView.spatialReference
-//        params.location = AGSPoint(x: 24, y: -122, spatialReference: mapView.spatialReference)
-//        
-//        //Kick off the geocoding operation
-//        //This will invoke the geocode service on a background thread
-//        self.locator.findWithParameters(params)
     }
 }
 
@@ -92,39 +82,13 @@ extension ActivityMapView: AGSMapViewLayerDelegate {
 //        mapView.locationDisplay.startDataSource()
     }
 }
-//
-//extension ActivityMapView: AGSLocatorDelegate {
-//    func locator(locator: AGSLocator!, operation op: NSOperation!, didFind results: [AnyObject]!) {
-//        if results == nil || results.count == 0 {
-//            //show alert if we didn't get results
-//        }
-//        else {
-//            //Create a callout template if we haven't done so already
-//            if self.calloutTemplate == nil {
-//                self.calloutTemplate = AGSCalloutTemplate()
-//                self.calloutTemplate.titleTemplate = "${Match_addr}"
-//                self.calloutTemplate.detailTemplate = "${DisplayY}\u{00b0} ${DisplayX}\u{00b0}"
-//                
-//                //Assign the callout template to the layer so that all graphics within this layer
-//                //display their information in the callout in the same manner
-//                self.graphicLayer.calloutDelegate = self.calloutTemplate
-//            }
-//            
-//            //Add a graphic for each result
-//            for result in results as! [AGSLocatorFindResult] {
-//                //                print(result.name)
-////                cityData.append(result.name)
-//                self.graphicLayer.addGraphic(result.graphic)
-//            }
-//            
-//            //Zoom in to the results
-//            let extent = self.graphicLayer.fullEnvelope.mutableCopy() as! AGSMutableEnvelope
-//            extent.expandByFactor(1.5)
-//            self.mapView.zoomToEnvelope(extent, animated: true)
-//        }
-//    }
-//    
-//    func locator(locator: AGSLocator!, operation op: NSOperation!, didFailLocationsForAddress error: NSError!) {
-//        //        UIAlertView(title: "Locator Failed", message: error.localizedDescription, delegate: nil, cancelButtonTitle: "OK").show()
-//    }
-//}
+
+extension ActivityMapView: AGSCalloutDelegate {
+    func didClickAccessoryButtonForCallout(callout: AGSCallout!) {
+        
+        self.selectedGraphic = callout.representedObject as! AGSGraphic
+        
+        // Open detailed view
+//        self.performSegueWithIdentifier("ResultsSegue", sender: self)
+    }
+}

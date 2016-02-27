@@ -28,9 +28,10 @@ class ActivityTableView: UIView {
     }
     
     func createTableView() {
-        tableView = UITableView(x: 0, y: 0, w: ez.screenWidth, h: ez.screenHeight)
+        tableView = UITableView(x: 0, y: 0, w: w, h: h)
         tableView.delegate      =   self
         tableView.dataSource    =   self
+        tableView.separatorStyle = UITableViewCellSeparatorStyle.SingleLine
         tableView!.registerClass(ActivityCell.self, forCellReuseIdentifier: NSStringFromClass(ActivityCell))
         self.addSubview(tableView)
     }
