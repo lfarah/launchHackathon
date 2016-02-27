@@ -50,7 +50,11 @@
 		C2A6D05F1C81BA1E004879EE /* CitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A6D05E1C81BA1E004879EE /* CitiesViewController.swift */; };
 		C2A6D0611C81BA25004879EE /* match.json in Resources */ = {isa = PBXBuildFile; fileRef = C2A6D0601C81BA25004879EE /* match.json */; };
 		C2B3B7211C81BEF000F17DC8 /* CitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B3B7201C81BEF000F17DC8 /* CitiesTableViewCell.swift */; };
+		C2C74B191C823D6200F535A2 /* STAnimationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C74B161C823D6200F535A2 /* STAnimationProtocol.swift */; };
+		C2C74B1A1C823D6200F535A2 /* STConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C74B171C823D6200F535A2 /* STConfiguration.swift */; };
+		C2C74B1B1C823D6200F535A2 /* STSpotLoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C74B181C823D6200F535A2 /* STSpotLoadView.swift */; };
 		C2EB86AB1C8228FA009FE49E /* activities.json in Resources */ = {isa = PBXBuildFile; fileRef = C2EB86AA1C8228FA009FE49E /* activities.json */; };
+		C2EB86AD1C823AE7009FE49E /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EB86AC1C823AE7009FE49E /* LoadingViewController.swift */; };
 		DCB146451C81AB690061F7F1 /* FoldingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB146441C81AB690061F7F1 /* FoldingCell.swift */; };
 		DCB146511C81AC0C0061F7F1 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCB146471C81AC0C0061F7F1 /* OpenSans-Bold.ttf */; };
 		DCB146521C81AC0C0061F7F1 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCB146481C81AC0C0061F7F1 /* OpenSans-BoldItalic.ttf */; };
@@ -112,7 +116,11 @@
 		C2A6D05E1C81BA1E004879EE /* CitiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesViewController.swift; sourceTree = "<group>"; };
 		C2A6D0601C81BA25004879EE /* match.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = match.json; sourceTree = "<group>"; };
 		C2B3B7201C81BEF000F17DC8 /* CitiesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesTableViewCell.swift; sourceTree = "<group>"; };
+		C2C74B161C823D6200F535A2 /* STAnimationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STAnimationProtocol.swift; sourceTree = "<group>"; };
+		C2C74B171C823D6200F535A2 /* STConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STConfiguration.swift; sourceTree = "<group>"; };
+		C2C74B181C823D6200F535A2 /* STSpotLoadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STSpotLoadView.swift; sourceTree = "<group>"; };
 		C2EB86AA1C8228FA009FE49E /* activities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = activities.json; sourceTree = "<group>"; };
+		C2EB86AC1C823AE7009FE49E /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		CA073B9ACD371CD4A1BA5541 /* Pods-Launch Hackathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Launch Hackathon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Launch Hackathon/Pods-Launch Hackathon.debug.xcconfig"; sourceTree = "<group>"; };
 		CFF038C798DAC6FD5E4CF64D /* Pods_Launch_Hackathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Launch_Hackathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCB146441C81AB690061F7F1 /* FoldingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoldingCell.swift; sourceTree = "<group>"; };
@@ -202,6 +210,7 @@
 		C2777B2C1C81452400A6488A = {
 			isa = PBXGroup;
 			children = (
+				C2C74B151C823D6200F535A2 /* STSpotLoadView */,
 				DCB146441C81AB690061F7F1 /* FoldingCell.swift */,
 				C2A6D0601C81BA25004879EE /* match.json */,
 				C2EB86AA1C8228FA009FE49E /* activities.json */,
@@ -233,6 +242,7 @@
 				DCB1465C1C81AE3D0061F7F1 /* ActivityCell.swift */,
 				C26D4D871C81534700E16D58 /* MainTableViewController.swift */,
 				C26D4D8D1C8161C300E16D58 /* Main.storyboard */,
+				C2EB86AC1C823AE7009FE49E /* LoadingViewController.swift */,
 				C2B3B7201C81BEF000F17DC8 /* CitiesTableViewCell.swift */,
 				C2A6D05E1C81BA1E004879EE /* CitiesViewController.swift */,
 				C26D4D881C81534700E16D58 /* DemoCell.swift */,
@@ -241,6 +251,16 @@
 				C2777B441C81452400A6488A /* Info.plist */,
 			);
 			path = "Launch Hackathon";
+			sourceTree = "<group>";
+		};
+		C2C74B151C823D6200F535A2 /* STSpotLoadView */ = {
+			isa = PBXGroup;
+			children = (
+				C2C74B161C823D6200F535A2 /* STAnimationProtocol.swift */,
+				C2C74B171C823D6200F535A2 /* STConfiguration.swift */,
+				C2C74B181C823D6200F535A2 /* STSpotLoadView.swift */,
+			);
+			path = STSpotLoadView;
 			sourceTree = "<group>";
 		};
 		DCB146461C81AC0C0061F7F1 /* Fonts */ = {
@@ -398,6 +418,7 @@
 				C26D4DBF1C81664000E16D58 /* NSObjectExtentions.swift in Sources */,
 				C26D4DCB1C81664000E16D58 /* UITextViewExtensions.swift in Sources */,
 				C26D4DB31C81664000E16D58 /* BlockPinch.swift in Sources */,
+				C2C74B1A1C823D6200F535A2 /* STConfiguration.swift in Sources */,
 				C26D4DC91C81664000E16D58 /* UIImageViewExtensions.swift in Sources */,
 				DCB146601C81C2CD0061F7F1 /* ActivityMapView.swift in Sources */,
 				C26D4DC71C81664000E16D58 /* UIFontExtensions.swift in Sources */,
@@ -427,9 +448,12 @@
 				C26D4DBC1C81664000E16D58 /* EZSwiftExtensions.swift in Sources */,
 				C26D4D8A1C81534700E16D58 /* DemoCell.swift in Sources */,
 				C26D4DCC1C81664000E16D58 /* UIViewControllerExtensions.swift in Sources */,
+				C2C74B1B1C823D6200F535A2 /* STSpotLoadView.swift in Sources */,
 				C26D4DB01C81664000E16D58 /* BlockButton.swift in Sources */,
 				C26D4DB41C81664000E16D58 /* BlockSwipe.swift in Sources */,
+				C2C74B191C823D6200F535A2 /* STAnimationProtocol.swift in Sources */,
 				C26D4DC61C81664000E16D58 /* UIDeviceExtensions.swift in Sources */,
+				C2EB86AD1C823AE7009FE49E /* LoadingViewController.swift in Sources */,
 				C26D4DC21C81664000E16D58 /* StringExtensions.swift in Sources */,
 				C26D4DB11C81664000E16D58 /* BlockLongPress.swift in Sources */,
 				C26D4DB81C81664000E16D58 /* CGFloatExtensions.swift in Sources */,
