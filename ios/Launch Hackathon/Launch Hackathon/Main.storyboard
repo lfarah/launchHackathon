@@ -47,10 +47,10 @@
             </objects>
             <point key="canvasLocation" x="-2310" y="-368.25"/>
         </scene>
-        <!--View Controller-->
+        <!--Activity View Controller-->
         <scene sceneID="Y1X-1w-x0O">
             <objects>
-                <viewController id="IvP-iP-5GK" customClass="ViewController" customModule="Launch_Hackathon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="IvP-iP-5GK" customClass="ActivityViewController" customModule="Launch_Hackathon" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4zz-Yx-4WY"/>
                         <viewControllerLayoutGuide type="bottom" id="csv-ao-arL"/>

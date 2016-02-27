@@ -1,10 +1,13 @@
 PODS:
   - ArcGIS-Runtime-SDK-iOS (10.2.5)
+  - Cosmos (1.2.1)
 
 DEPENDENCIES:
   - ArcGIS-Runtime-SDK-iOS
+  - Cosmos (~> 1.2)
 
 SPEC CHECKSUMS:
   ArcGIS-Runtime-SDK-iOS: 0d62980b8ed60c1ee8ca292c1c644e74e0e922aa
+  Cosmos: 27ddd077ef5859659a4bbbbd84137ae717f020e8
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0
