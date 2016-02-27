@@ -57,8 +57,9 @@
 		DCB146581C81AC0C0061F7F1 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCB1464E1C81AC0C0061F7F1 /* OpenSans-Regular.ttf */; };
 		DCB146591C81AC0C0061F7F1 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCB1464F1C81AC0C0061F7F1 /* OpenSans-Semibold.ttf */; };
 		DCB1465A1C81AC0C0061F7F1 /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCB146501C81AC0C0061F7F1 /* OpenSans-SemiboldItalic.ttf */; };
-		DCB1465D1C81AE3D0061F7F1 /* ActivitiesTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB1465B1C81AE3D0061F7F1 /* ActivitiesTableVC.swift */; };
+		DCB1465D1C81AE3D0061F7F1 /* ActivityTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB1465B1C81AE3D0061F7F1 /* ActivityTableView.swift */; };
 		DCB1465E1C81AE3D0061F7F1 /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB1465C1C81AE3D0061F7F1 /* ActivityCell.swift */; };
+		DCB146601C81C2CD0061F7F1 /* ActivityMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB1465F1C81C2CD0061F7F1 /* ActivityMapView.swift */; };
 		DE36610F5DB27F2490A127D0 /* libPods-Launch Hackathon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E6C1E027B53F9E030F7A84 /* libPods-Launch Hackathon.a */; };
 /* End PBXBuildFile section */
 
@@ -117,8 +118,9 @@
 		DCB1464E1C81AC0C0061F7F1 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		DCB1464F1C81AC0C0061F7F1 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
 		DCB146501C81AC0C0061F7F1 /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
-		DCB1465B1C81AE3D0061F7F1 /* ActivitiesTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitiesTableVC.swift; sourceTree = "<group>"; };
+		DCB1465B1C81AE3D0061F7F1 /* ActivityTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityTableView.swift; sourceTree = "<group>"; };
 		DCB1465C1C81AE3D0061F7F1 /* ActivityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
+		DCB1465F1C81C2CD0061F7F1 /* ActivityMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityMapView.swift; sourceTree = "<group>"; };
 		ED0F6FCBA035FE5F14C22A18 /* Pods-Launch Hackathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Launch Hackathon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Launch Hackathon/Pods-Launch Hackathon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -216,9 +218,10 @@
 				C25FC4E31C81680C00C41538 /* blank timeline with line.png */,
 				C2777B381C81452400A6488A /* AppDelegate.swift */,
 				C2777B3A1C81452400A6488A /* ActivityViewController.swift */,
-				C26D4D871C81534700E16D58 /* MainTableViewController.swift */,
-				DCB1465B1C81AE3D0061F7F1 /* ActivitiesTableVC.swift */,
+				DCB1465F1C81C2CD0061F7F1 /* ActivityMapView.swift */,
+				DCB1465B1C81AE3D0061F7F1 /* ActivityTableView.swift */,
 				DCB1465C1C81AE3D0061F7F1 /* ActivityCell.swift */,
+				C26D4D871C81534700E16D58 /* MainTableViewController.swift */,
 				C26D4D8D1C8161C300E16D58 /* Main.storyboard */,
 				C26D4D881C81534700E16D58 /* DemoCell.swift */,
 				C2777B3F1C81452400A6488A /* Assets.xcassets */,
@@ -382,6 +385,7 @@
 				C26D4DCB1C81664000E16D58 /* UITextViewExtensions.swift in Sources */,
 				C26D4DB31C81664000E16D58 /* BlockPinch.swift in Sources */,
 				C26D4DC91C81664000E16D58 /* UIImageViewExtensions.swift in Sources */,
+				DCB146601C81C2CD0061F7F1 /* ActivityMapView.swift in Sources */,
 				C26D4DC71C81664000E16D58 /* UIFontExtensions.swift in Sources */,
 				C26D4D891C81534700E16D58 /* MainTableViewController.swift in Sources */,
 				C26D4DB71C81664000E16D58 /* BoolExtentions.swift in Sources */,
@@ -414,7 +418,7 @@
 				C26D4DB11C81664000E16D58 /* BlockLongPress.swift in Sources */,
 				C26D4DB81C81664000E16D58 /* CGFloatExtensions.swift in Sources */,
 				C26D4DCD1C81664000E16D58 /* UIViewExtensions.swift in Sources */,
-				DCB1465D1C81AE3D0061F7F1 /* ActivitiesTableVC.swift in Sources */,
+				DCB1465D1C81AE3D0061F7F1 /* ActivityTableView.swift in Sources */,
 				C26D4DC81C81664000E16D58 /* UIImageExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,9 +12,9 @@ class ActivityCell: UITableViewCell {
     
     let padding: CGFloat = 5
     var nameLabel: UILabel!
-    var descriptionLabel: UILabel!
     var profileImageView: UIImageView!
-    var countLabel: UILabel!
+    var distanceLabel: UILabel!
+    
     var whiteRoundedCornerView: UIView!
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
@@ -41,15 +41,10 @@ class ActivityCell: UITableViewCell {
         nameLabel.textColor = UIColor.blackColor()
         contentView.addSubview(nameLabel)
         
-        descriptionLabel = UILabel(x: profileImageView.rightOffset(10), y: nameLabel.bottomOffset(5), w: frame.width, h: frame.height)
-        descriptionLabel.textAlignment = .Left
-        descriptionLabel.textColor = UIColor.blackColor()
-        contentView.addSubview(descriptionLabel)
-        
-        countLabel = UILabel(x: whiteRoundedCornerView.leftOffset(10), y: 15, w: frame.width, h: frame.height)
-        countLabel.textAlignment = .Right
-        countLabel.textColor = UIColor.grayColor()
-        contentView.addSubview(countLabel)
+        distanceLabel = UILabel(x: whiteRoundedCornerView.leftOffset(40), y: -15, w: frame.width, h: frame.height)
+        distanceLabel.textAlignment = .Right
+        distanceLabel.textColor = UIColor.grayColor()
+        contentView.addSubview(distanceLabel)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -64,8 +59,7 @@ class ActivityCell: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         nameLabel.frame = CGRectMake(profileImageView.rightOffset(10), -15, frame.width, frame.height)
-        descriptionLabel.frame = CGRectMake(profileImageView.rightOffset(10), nameLabel.bottomOffset(25), frame.width, frame.height)
-        countLabel.frame = CGRectMake(whiteRoundedCornerView.leftOffset(40), 0, frame.width, frame.height)
+        distanceLabel.frame = CGRectMake(whiteRoundedCornerView.leftOffset(40), -15, frame.width, frame.height)
     }
 }
 
