@@ -351,11 +351,12 @@
                     </view>
                     <connections>
                         <outlet property="table" destination="9Nz-r5-BD5" id="jdZ-TU-svZ"/>
+                        <segue destination="JFH-hJ-17Q" kind="show" identifier="destinationChosen" id="lBb-Zm-Q7a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HUX-CL-nxb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-604.5" y="891"/>
+            <point key="canvasLocation" x="-3022.5" y="-384"/>
         </scene>
         <!--Main Table View Controller-->
         <scene sceneID="Q2d-BE-geS">
@@ -1243,6 +1244,10 @@ Presidio</string>
                                     <outlet property="cont" destination="oxa-Zu-WLe" id="pch-Sl-BT6"/>
                                     <outlet property="containerView" destination="CGm-93-iX0" id="gSm-z4-RdG"/>
                                     <outlet property="foregroundView" destination="CQr-i9-7br" id="88q-9Z-PtA"/>
+                                    <outlet property="lblAddressActivity" destination="b6C-YQ-gPN" id="QdN-9E-Kd9"/>
+                                    <outlet property="lblDistanceActivity" destination="bZ2-2i-LGz" id="PHs-wZ-yOc"/>
+                                    <outlet property="lblNameActivity" destination="uWN-IE-lnm" id="GNp-r3-dt3"/>
+                                    <outlet property="lblPriceActivity" destination="eRX-Jm-MZx" id="ded-ZI-tFR"/>
                                     <outlet property="viewColor" destination="Qgq-xd-nLr" id="awZ-MX-Hm2"/>
                                 </connections>
                             </tableViewCell>

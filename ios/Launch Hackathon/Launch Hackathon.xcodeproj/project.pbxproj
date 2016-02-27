@@ -50,6 +50,7 @@
 		C2A6D05F1C81BA1E004879EE /* CitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A6D05E1C81BA1E004879EE /* CitiesViewController.swift */; };
 		C2A6D0611C81BA25004879EE /* match.json in Resources */ = {isa = PBXBuildFile; fileRef = C2A6D0601C81BA25004879EE /* match.json */; };
 		C2B3B7211C81BEF000F17DC8 /* CitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B3B7201C81BEF000F17DC8 /* CitiesTableViewCell.swift */; };
+		C2EB86AB1C8228FA009FE49E /* activities.json in Resources */ = {isa = PBXBuildFile; fileRef = C2EB86AA1C8228FA009FE49E /* activities.json */; };
 		DCB146451C81AB690061F7F1 /* FoldingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB146441C81AB690061F7F1 /* FoldingCell.swift */; };
 		DCB146511C81AC0C0061F7F1 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCB146471C81AC0C0061F7F1 /* OpenSans-Bold.ttf */; };
 		DCB146521C81AC0C0061F7F1 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCB146481C81AC0C0061F7F1 /* OpenSans-BoldItalic.ttf */; };
@@ -111,6 +112,7 @@
 		C2A6D05E1C81BA1E004879EE /* CitiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesViewController.swift; sourceTree = "<group>"; };
 		C2A6D0601C81BA25004879EE /* match.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = match.json; sourceTree = "<group>"; };
 		C2B3B7201C81BEF000F17DC8 /* CitiesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesTableViewCell.swift; sourceTree = "<group>"; };
+		C2EB86AA1C8228FA009FE49E /* activities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = activities.json; sourceTree = "<group>"; };
 		CA073B9ACD371CD4A1BA5541 /* Pods-Launch Hackathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Launch Hackathon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Launch Hackathon/Pods-Launch Hackathon.debug.xcconfig"; sourceTree = "<group>"; };
 		CFF038C798DAC6FD5E4CF64D /* Pods_Launch_Hackathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Launch_Hackathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCB146441C81AB690061F7F1 /* FoldingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoldingCell.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 			children = (
 				DCB146441C81AB690061F7F1 /* FoldingCell.swift */,
 				C2A6D0601C81BA25004879EE /* match.json */,
+				C2EB86AA1C8228FA009FE49E /* activities.json */,
 				DCB146461C81AC0C0061F7F1 /* Fonts */,
 				C26D4D8F1C81664000E16D58 /* Sources */,
 				C2777B371C81452400A6488A /* Launch Hackathon */,
@@ -330,6 +333,7 @@
 				DCB146511C81AC0C0061F7F1 /* OpenSans-Bold.ttf in Resources */,
 				C26D4D8E1C8161C300E16D58 /* Main.storyboard in Resources */,
 				DCB1465A1C81AC0C0061F7F1 /* OpenSans-SemiboldItalic.ttf in Resources */,
+				C2EB86AB1C8228FA009FE49E /* activities.json in Resources */,
 				DCB146561C81AC0C0061F7F1 /* OpenSans-Light.ttf in Resources */,
 				DCB146581C81AC0C0061F7F1 /* OpenSans-Regular.ttf in Resources */,
 				DCB146541C81AC0C0061F7F1 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
@@ -535,6 +539,7 @@
 			baseConfigurationReference = CA073B9ACD371CD4A1BA5541 /* Pods-Launch Hackathon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = "Launch Hackathon/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "farah.lucas.Launch-Hackathon";
@@ -547,6 +552,7 @@
 			baseConfigurationReference = ED0F6FCBA035FE5F14C22A18 /* Pods-Launch Hackathon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = "Launch Hackathon/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "farah.lucas.Launch-Hackathon";

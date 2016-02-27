@@ -13,6 +13,20 @@ class DemoCell: FoldingCell {
   @IBOutlet weak var viewColor: UIView!
   @IBOutlet weak var cont: UIView!
   @IBOutlet weak var barView: UIView!
+  
+  
+  //Closed cell
+  @IBOutlet weak var lblNameActivity: UILabel!
+  @IBOutlet weak var lblDistanceActivity: UILabel!
+  
+  @IBOutlet weak var lblAddressActivity: UILabel!
+  
+  @IBOutlet weak var lblPriceActivity: UILabel!
+  
+  
+  
+  
+  
   override func awakeFromNib() {
     
 //    foregroundView.layer.cornerRadius = 10

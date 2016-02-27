@@ -63,7 +63,7 @@ class CitiesViewController: UIViewController,UITableViewDataSource,UITableViewDe
   
   func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
   {
-    
+    self.performSegueWithIdentifier("destinationChosen", sender: self)
   }
   
   override func didReceiveMemoryWarning() {
