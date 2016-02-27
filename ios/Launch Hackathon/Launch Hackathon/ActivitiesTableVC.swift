@@ -11,8 +11,6 @@ import ArcGIS
 
 class ActivitiesTableVC: UITableViewController {
     
-//    var tableView: UITableView!
-    
     var cityData: [String] = []
     
     init(data someData : [String]) {

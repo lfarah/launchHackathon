@@ -1,7 +1,7 @@
 import UIKit
 import ArcGIS
 
-class ViewController: UIViewController {
+class ActivityViewController: UIViewController {
   
   var containerView: UIView!
   
@@ -45,13 +45,10 @@ class ViewController: UIViewController {
     let tiledLayer = AGSTiledMapServiceLayer(URL: url)
     mapView.addMapLayer(tiledLayer, withName: "Basemap Tiled Layer")
     
+//    mapView.toMapPoint(CGPoint(x: 37.7749295, y: -122.41941550000001))
+    mapView.zoomToResolution(10000, animated: false)
+    
     containerView.addSubview(mapView)
-    
-    //        mapView.zoomToResolution(100000, animated: false)
-    
-    //        let envelope = AGSEnvelope(xmin: -124.83145667, ymin:30.49849464, xmax:-113.91375495, ymax:44.69150688, spatialReference: mapView.spatialReference)
-    //        mapView.zoomToEnvelope(envelope, animated: false)
-    
   }
   
   func createSearchBar() {
@@ -63,13 +60,13 @@ class ViewController: UIViewController {
   
 }
 
-extension ViewController: AGSMapViewLayerDelegate {
+extension ActivityViewController: AGSMapViewLayerDelegate {
   func mapViewDidLoad(mapView: AGSMapView!) {
     mapView.locationDisplay.startDataSource()
   }
 }
 
-extension ViewController: AGSLocatorDelegate {
+extension ActivityViewController: AGSLocatorDelegate {
   func locator(locator: AGSLocator!, operation op: NSOperation!, didFind results: [AnyObject]!) {
     if results == nil || results.count == 0 {
       //show alert if we didn't get results
@@ -108,7 +105,7 @@ extension ViewController: AGSLocatorDelegate {
   }
 }
 
-extension ViewController: UISearchBarDelegate {
+extension ActivityViewController: UISearchBarDelegate {
   func searchBarSearchButtonClicked(searchBar: UISearchBar) {
     
     //Hide the keyboard
