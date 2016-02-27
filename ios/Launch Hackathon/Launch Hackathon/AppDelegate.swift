@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ArcGIS
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     // Override point for customization after application launch.
+    
+    // Set the client ID for ArcGis
+    let clientID = "bwq3RGkUW8JE3vtb"
+    do {
+        try AGSRuntimeEnvironment.setClientID(clientID)
+    } catch _ {
+        
+    }
+    
     return true
   }
 
