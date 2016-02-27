@@ -18,6 +18,16 @@ class ActivityMapView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
+        createMap()
+        createPins()
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func createMap() {
         mapView = AGSMapView(x: 0, y: 0, w: frame.width, h: frame.height)
         self.mapView.layerDelegate = self
         
@@ -29,9 +39,42 @@ class ActivityMapView: UIView {
         mapView.zoomToResolution(10000, animated: false)
         addSubview(mapView)
     }
-
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    
+    func createPins() {
+        if self.graphicLayer == nil {
+            //Add a graphics layer to the map. This layer will hold geocoding results
+            self.graphicLayer = AGSGraphicsLayer()
+            self.mapView.addMapLayer(self.graphicLayer, withName:"Results")
+            //Assign a simple renderer to the layer to display results as pushpins
+            let pushpin = AGSPictureMarkerSymbol(imageNamed: "BluePushpin.png")
+            pushpin.offset = CGPointMake(9, 16)
+            pushpin.leaderPoint = CGPointMake(-9, 11)
+            let renderer = AGSSimpleRenderer(symbol: pushpin)
+            self.graphicLayer.renderer = renderer
+        }
+        else {
+            //Clear out previous results if we already have a graphics layer
+            self.graphicLayer.removeAllGraphics()
+        }
+        
+        if self.locator == nil {
+            //Create the AGSLocator pointing to the geocode service on ArcGIS Online
+            //Set the delegate so that we are informed through AGSLocatorDelegate methods
+            let url = NSURL(string: "http://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer")
+            self.locator = AGSLocator(URL: url)
+            self.locator.delegate = self
+        }
+        
+        //Set the parameters
+        let params = AGSLocatorFindParameters()
+        params.text = "Market"
+        params.outFields = ["*"]
+        params.outSpatialReference = self.mapView.spatialReference
+        params.location = AGSPoint(x: 0, y: 0, spatialReference: nil)
+        
+        //Kick off the geocoding operation
+        //This will invoke the geocode service on a background thread
+        self.locator.findWithParameters(params)
     }
 }
 
@@ -69,9 +112,6 @@ extension ActivityMapView: AGSLocatorDelegate {
             let extent = self.graphicLayer.fullEnvelope.mutableCopy() as! AGSMutableEnvelope
             extent.expandByFactor(1.5)
             self.mapView.zoomToEnvelope(extent, animated: true)
-            
-//            let activityVC = ActivitiesTableVC(data: cityData)
-//            presentVC(activityVC)
         }
     }
     
