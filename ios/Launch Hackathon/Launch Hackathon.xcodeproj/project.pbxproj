@@ -392,6 +392,7 @@
 				C26D4DBD1C81664000E16D58 /* IntExtentions.swift in Sources */,
 				C26D4DAF1C81664000E16D58 /* ArrayExtensions.swift in Sources */,
 				C26D4DBE1C81664000E16D58 /* NSDateExtensions.swift in Sources */,
+				C2B3B7211C81BEF000F17DC8 /* CitiesTableViewCell.swift in Sources */,
 				C2777B3B1C81452400A6488A /* ActivityViewController.swift in Sources */,
 				C26D4DCA1C81664000E16D58 /* UILabelExtensions.swift in Sources */,
 				C26D4DC41C81664000E16D58 /* UIColoredView.swift in Sources */,
