@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A40D4BA725BEE780C5C56D6 /* Pods_Launch_Hackathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF038C798DAC6FD5E4CF64D /* Pods_Launch_Hackathon.framework */; };
 		C25FC4E41C81680C00C41538 /* blank timeline with line.png in Resources */ = {isa = PBXBuildFile; fileRef = C25FC4E31C81680C00C41538 /* blank timeline with line.png */; };
 		C26D4D891C81534700E16D58 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26D4D871C81534700E16D58 /* MainTableViewController.swift */; };
 		C26D4D8A1C81534700E16D58 /* DemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26D4D881C81534700E16D58 /* DemoCell.swift */; };
@@ -63,11 +64,9 @@
 		DCB1465D1C81AE3D0061F7F1 /* ActivityTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB1465B1C81AE3D0061F7F1 /* ActivityTableView.swift */; };
 		DCB1465E1C81AE3D0061F7F1 /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB1465C1C81AE3D0061F7F1 /* ActivityCell.swift */; };
 		DCB146601C81C2CD0061F7F1 /* ActivityMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB1465F1C81C2CD0061F7F1 /* ActivityMapView.swift */; };
-		DE36610F5DB27F2490A127D0 /* libPods-Launch Hackathon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E6C1E027B53F9E030F7A84 /* libPods-Launch Hackathon.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B6E6C1E027B53F9E030F7A84 /* libPods-Launch Hackathon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Launch Hackathon.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C25FC4E31C81680C00C41538 /* blank timeline with line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blank timeline with line.png"; sourceTree = "<group>"; };
 		C26D4D871C81534700E16D58 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		C26D4D881C81534700E16D58 /* DemoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCell.swift; sourceTree = "<group>"; };
@@ -113,6 +112,7 @@
 		C2A6D0601C81BA25004879EE /* match.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = match.json; sourceTree = "<group>"; };
 		C2B3B7201C81BEF000F17DC8 /* CitiesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesTableViewCell.swift; sourceTree = "<group>"; };
 		CA073B9ACD371CD4A1BA5541 /* Pods-Launch Hackathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Launch Hackathon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Launch Hackathon/Pods-Launch Hackathon.debug.xcconfig"; sourceTree = "<group>"; };
+		CFF038C798DAC6FD5E4CF64D /* Pods_Launch_Hackathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Launch_Hackathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCB146441C81AB690061F7F1 /* FoldingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoldingCell.swift; sourceTree = "<group>"; };
 		DCB146471C81AC0C0061F7F1 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		DCB146481C81AC0C0061F7F1 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
@@ -135,7 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE36610F5DB27F2490A127D0 /* libPods-Launch Hackathon.a in Frameworks */,
+				2A40D4BA725BEE780C5C56D6 /* Pods_Launch_Hackathon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,7 +145,7 @@
 		7211E28DD3CC69260AD342B1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B6E6C1E027B53F9E030F7A84 /* libPods-Launch Hackathon.a */,
+				CFF038C798DAC6FD5E4CF64D /* Pods_Launch_Hackathon.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -269,6 +269,7 @@
 				C2777B321C81452400A6488A /* Frameworks */,
 				C2777B331C81452400A6488A /* Resources */,
 				DC20B860F1C9E69E7F73E172 /* Copy Pods Resources */,
+				C9CFCFD3E7B8E8AA6055B7D0 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -351,6 +352,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C9CFCFD3E7B8E8AA6055B7D0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Launch Hackathon/Pods-Launch Hackathon-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DC20B860F1C9E69E7F73E172 /* Copy Pods Resources */ = {

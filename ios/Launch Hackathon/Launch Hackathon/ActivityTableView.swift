@@ -42,8 +42,10 @@ extension ActivityTableView: UITableViewDelegate, UITableViewDataSource {
         //datasource method returning the what cell contains
         let cell = tableView.dequeueReusableCellWithIdentifier( NSStringFromClass(ActivityCell), forIndexPath: indexPath) as! ActivityCell
         cell.nameLabel?.text = cityData[indexPath.row]
-        cell.distanceLabel.text = "5 miles"
+        cell.distanceLabel.text = "1.8 mi"
         cell.profileImageView.image = UIImage(named: "Bitmap")
+        cell.rating.rating = 4
+        cell.address.text = "Hwy 101, Presidio"
         
         return cell
     }

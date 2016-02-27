@@ -53,7 +53,13 @@ class ActivityViewController: UIViewController {
         bannerImageView.contentMode = .ScaleToFill
         bannerView.addSubview(bannerImageView)
         
-        let bannerButton = UIButton(x: bannerView.rightOffset(-80), y: bannerView.bottomOffset(-50), w: 70, h: 40)
+        let bannerLabel = UILabel(x: 50, y: 50, w: 0, h: 30, fontSize: 32)
+        bannerLabel.text = "San Francisco"
+        bannerLabel.textColor = UIColor.whiteColor()
+        bannerLabel.fitWidth()
+        bannerView.addSubview(bannerLabel)
+        
+        let bannerButton = UIButton(x: bannerView.rightOffset(-80), y: bannerView.bottomOffset(-40), w: 70, h: 30)
         bannerButton.backgroundColor = UIColor(r: 71, g: 161, b: 204)
         bannerButton.layer.cornerRadius = 6
         bannerButton.setTitle("LIST", forState: UIControlState.Normal)
@@ -89,10 +95,4 @@ class ActivityViewController: UIViewController {
         containerView.addSubview(activityTableView)
         activityTableView.hidden = true
     }
-    
-    
-    //    func createMapView() {
-    //        mapView = ActivityMapView(x: containerView.x, y: bannerView.bottom, w: containerView.w, h: containerView.h - bannerView.h)
-    //        containerView.addSubview(mapView)
-    //    }
 }
