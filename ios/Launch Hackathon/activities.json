@@ -1,0 +1,41 @@
+ [
+  {
+  "name": "Golden Gate Bridge",
+  "distanceFromHotel": 1.1,
+  "address": "1043 Mangrove Ln - San Francisco,CA",
+  "price": 40,
+  "match": 85,
+  "rating": 4,
+  "ratingName": "John Snow",
+  "ratingDescription": "I loved Golden Gate Bridge. It's a very relaxing place!",
+  "ratingStar": 5,
+  "description": "Golden Gate Bridge is specially breathtaking in the morning",
+  "bookWebsite": "http://www.expedia.com"
+  },
+  {
+  "name": "Lombard Street",
+  "distanceFromHotel": 4.7,
+  "address": "1043 Mangrove Ln - San Francisco,CA",
+  "price": 0,
+  "match": 85,
+  "rating": 4,
+  "ratingName": "John Snow",
+  "ratingDescription": "I loved Golden Gate Bridge. It's a very relaxing place!",
+  "ratingStar": 5,
+  "description": "Golden Gate Bridge is specially breathtaking in the morning",
+  "bookWebsite": "http://www.expedia.com"
+  },
+  {
+  "name": "McDonnalds",
+  "distanceFromHotel": 0.2,
+  "address": "1043 Mangrove Ln - San Francisco,CA",
+  "price": 5,
+  "match": 85,
+  "rating": 4,
+  "ratingName": "John Snow",
+  "ratingDescription": "I loved Golden Gate Bridge. It's a very relaxing place!",
+  "ratingStar": 5,
+  "description": "Golden Gate Bridge is specially breathtaking in the morning",
+  "bookWebsite": "http://www.expedia.com"
+  }
+  ]
