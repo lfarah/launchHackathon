@@ -477,7 +477,7 @@ extension RotatedView {
   }
 }
 
-extension UIView {
+private extension UIView {
   func pb_takeSnapshot(frame: CGRect) -> UIImage? {
     UIGraphicsBeginImageContextWithOptions(frame.size, false, 0.0)
     
