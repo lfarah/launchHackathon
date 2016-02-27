@@ -37,8 +37,8 @@ class MainTableViewController: UITableViewController {
         
         createCellHeightsArray()
 //        self.tableView.backgroundColor = UIColor(patternImage: UIImage(named: "blank timeline with line.png")!)
-      
-      self.setBackgroundImage("blank timeline with line.png")
+      self.tableView.backgroundColor = .clearColor()
+//      self.setBackgroundImage("blank timeline with line.png")
     }
     
     // MARK: configure
