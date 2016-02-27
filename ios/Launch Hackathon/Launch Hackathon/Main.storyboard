@@ -228,7 +228,7 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="San Francisco" translatesAutoresizingMaskIntoConstraints="NO" id="w5R-tE-DT4">
                                                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                                     <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="0.0" y="-6.5" width="240" height="153.5"/>
+                                                        <rect key="frame" x="0.0" y="-7" width="240" height="153.5"/>
                                                     </variation>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wT9-Ea-iKS">
@@ -362,16 +362,16 @@
             <objects>
                 <tableViewController storyboardIdentifier="MainTableViewController" id="0cn-rv-Emg" customClass="MainTableViewController" customModule="Launch_Hackathon" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="667" sectionHeaderHeight="28" sectionFooterHeight="28" id="MwZ-K3-six">
-                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="700"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="FoldingCell" rowHeight="667" id="fgm-B1-nUi" customClass="DemoCell" customModule="Launch_Hackathon" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="240" height="667"/>
+                                <rect key="frame" x="0.0" y="28" width="400" height="667"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fgm-B1-nUi" id="MxP-E5-nua">
-                                    <rect key="frame" x="0.0" y="0.0" width="240" height="667"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="667"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CGm-93-iX0" userLabel="Contener">
@@ -630,10 +630,10 @@ when the sunrises. Takes your breath away</string>
                                                             <exclude reference="cLk-lx-gap"/>
                                                         </mask>
                                                         <mask key="constraints">
-                                                            <exclude reference="GTS-xd-Pfx"/>
                                                             <exclude reference="8dA-Qa-TRh"/>
                                                             <exclude reference="ZA4-px-eT6"/>
                                                             <exclude reference="jMs-OY-gFE"/>
+                                                            <exclude reference="GTS-xd-Pfx"/>
                                                         </mask>
                                                     </variation>
                                                     <variation key="heightClass=regular-widthClass=compact">
@@ -642,10 +642,10 @@ when the sunrises. Takes your breath away</string>
                                                             <include reference="cLk-lx-gap"/>
                                                         </mask>
                                                         <mask key="constraints">
-                                                            <include reference="GTS-xd-Pfx"/>
                                                             <include reference="8dA-Qa-TRh"/>
                                                             <include reference="ZA4-px-eT6"/>
                                                             <include reference="jMs-OY-gFE"/>
+                                                            <include reference="GTS-xd-Pfx"/>
                                                         </mask>
                                                     </variation>
                                                 </view>
@@ -782,7 +782,7 @@ White walkers will reign the night.</string>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
-                                                            <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                            <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
                                                                 <rect key="frame" x="8" y="101" width="63" height="21"/>
                                                             </variation>
                                                         </label>
@@ -793,7 +793,7 @@ Presidio</string>
                                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
-                                                            <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                                            <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
                                                                 <rect key="frame" x="8" y="123.5" width="236" height="31.5"/>
                                                             </variation>
                                                         </label>
@@ -857,14 +857,14 @@ Presidio</string>
                                                             <exclude reference="L8i-7W-PMd"/>
                                                         </mask>
                                                         <mask key="constraints">
-                                                            <exclude reference="hgR-lj-oME"/>
-                                                            <exclude reference="jfI-he-s5q"/>
-                                                            <exclude reference="tzV-HN-Xi5"/>
-                                                            <exclude reference="vRm-kc-Uoz"/>
-                                                            <exclude reference="z6J-TN-ou8"/>
                                                             <exclude reference="5m5-ol-Y34"/>
                                                             <exclude reference="i9C-U0-c5n"/>
                                                             <exclude reference="iyy-rE-TOk"/>
+                                                            <exclude reference="vRm-kc-Uoz"/>
+                                                            <exclude reference="z6J-TN-ou8"/>
+                                                            <exclude reference="hgR-lj-oME"/>
+                                                            <exclude reference="jfI-he-s5q"/>
+                                                            <exclude reference="tzV-HN-Xi5"/>
                                                             <exclude reference="f4Z-8Z-mmW"/>
                                                         </mask>
                                                     </variation>
@@ -875,14 +875,14 @@ Presidio</string>
                                                             <include reference="L8i-7W-PMd"/>
                                                         </mask>
                                                         <mask key="constraints">
-                                                            <include reference="hgR-lj-oME"/>
-                                                            <include reference="jfI-he-s5q"/>
-                                                            <include reference="tzV-HN-Xi5"/>
-                                                            <include reference="vRm-kc-Uoz"/>
-                                                            <include reference="z6J-TN-ou8"/>
                                                             <include reference="5m5-ol-Y34"/>
                                                             <include reference="i9C-U0-c5n"/>
                                                             <include reference="iyy-rE-TOk"/>
+                                                            <include reference="vRm-kc-Uoz"/>
+                                                            <include reference="z6J-TN-ou8"/>
+                                                            <include reference="hgR-lj-oME"/>
+                                                            <include reference="jfI-he-s5q"/>
+                                                            <include reference="tzV-HN-Xi5"/>
                                                             <include reference="f4Z-8Z-mmW"/>
                                                         </mask>
                                                     </variation>
@@ -987,9 +987,9 @@ Presidio</string>
                                                     <exclude reference="g3W-eq-ZuE"/>
                                                 </mask>
                                                 <mask key="constraints">
+                                                    <exclude reference="eF1-wL-AwG"/>
                                                     <exclude reference="Uq4-Ia-Ags"/>
                                                     <exclude reference="Xhb-xN-mTM"/>
-                                                    <exclude reference="eF1-wL-AwG"/>
                                                 </mask>
                                             </variation>
                                             <variation key="heightClass=regular-widthClass=compact">
@@ -997,9 +997,9 @@ Presidio</string>
                                                     <include reference="g3W-eq-ZuE"/>
                                                 </mask>
                                                 <mask key="constraints">
+                                                    <include reference="eF1-wL-AwG"/>
                                                     <include reference="Uq4-Ia-Ags"/>
                                                     <include reference="Xhb-xN-mTM"/>
-                                                    <include reference="eF1-wL-AwG"/>
                                                 </mask>
                                             </variation>
                                         </view>
@@ -1015,7 +1015,7 @@ Presidio</string>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                             <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                                <rect key="frame" x="8" y="8" width="236" height="24"/>
+                                                                <rect key="frame" x="8" y="8" width="236" height="23.5"/>
                                                             </variation>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance: 0.7 mi." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZ2-2i-LGz">
@@ -1024,7 +1024,7 @@ Presidio</string>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                             <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                                <rect key="frame" x="8" y="31" width="236" height="17"/>
+                                                                <rect key="frame" x="8" y="30" width="236" height="16.5"/>
                                                             </variation>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRX-Jm-MZx">
@@ -1033,7 +1033,7 @@ Presidio</string>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                             <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                                <rect key="frame" x="161" y="50" width="83" height="48"/>
+                                                                <rect key="frame" x="161" y="49" width="83" height="48"/>
                                                             </variation>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1043 Mangrove Ln San Francisco, CA" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6C-YQ-gPN">
@@ -1050,7 +1050,7 @@ Presidio</string>
                                                                 </mask>
                                                             </variation>
                                                             <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                                <rect key="frame" x="8" y="62" width="134" height="33.5"/>
+                                                                <rect key="frame" x="8" y="61" width="134" height="33.5"/>
                                                                 <mask key="constraints">
                                                                     <include reference="QIz-gl-6L4"/>
                                                                 </mask>
