@@ -46,6 +46,9 @@
 		C2777B3B1C81452400A6488A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2777B3A1C81452400A6488A /* ViewController.swift */; };
 		C2777B401C81452400A6488A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2777B3F1C81452400A6488A /* Assets.xcassets */; };
 		C2777B431C81452400A6488A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2777B411C81452400A6488A /* LaunchScreen.storyboard */; };
+		C2A6D05F1C81BA1E004879EE /* CitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A6D05E1C81BA1E004879EE /* CitiesViewController.swift */; };
+		C2A6D0611C81BA25004879EE /* match.json in Resources */ = {isa = PBXBuildFile; fileRef = C2A6D0601C81BA25004879EE /* match.json */; };
+		C2B3B7211C81BEF000F17DC8 /* CitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B3B7201C81BEF000F17DC8 /* CitiesTableViewCell.swift */; };
 		DCB146451C81AB690061F7F1 /* FoldingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB146441C81AB690061F7F1 /* FoldingCell.swift */; };
 		DCB146511C81AC0C0061F7F1 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCB146471C81AC0C0061F7F1 /* OpenSans-Bold.ttf */; };
 		DCB146521C81AC0C0061F7F1 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCB146481C81AC0C0061F7F1 /* OpenSans-BoldItalic.ttf */; };
@@ -105,6 +108,9 @@
 		C2777B3F1C81452400A6488A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2777B421C81452400A6488A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2777B441C81452400A6488A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2A6D05E1C81BA1E004879EE /* CitiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesViewController.swift; sourceTree = "<group>"; };
+		C2A6D0601C81BA25004879EE /* match.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = match.json; sourceTree = "<group>"; };
+		C2B3B7201C81BEF000F17DC8 /* CitiesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesTableViewCell.swift; sourceTree = "<group>"; };
 		CA073B9ACD371CD4A1BA5541 /* Pods-Launch Hackathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Launch Hackathon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Launch Hackathon/Pods-Launch Hackathon.debug.xcconfig"; sourceTree = "<group>"; };
 		DCB146441C81AB690061F7F1 /* FoldingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoldingCell.swift; sourceTree = "<group>"; };
 		DCB146471C81AC0C0061F7F1 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
@@ -193,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				DCB146441C81AB690061F7F1 /* FoldingCell.swift */,
+				C2A6D0601C81BA25004879EE /* match.json */,
 				DCB146461C81AC0C0061F7F1 /* Fonts */,
 				C26D4D8F1C81664000E16D58 /* Sources */,
 				C2777B371C81452400A6488A /* Launch Hackathon */,
@@ -220,6 +227,8 @@
 				DCB1465B1C81AE3D0061F7F1 /* ActivitiesTableVC.swift */,
 				DCB1465C1C81AE3D0061F7F1 /* ActivityCell.swift */,
 				C26D4D8D1C8161C300E16D58 /* Main.storyboard */,
+				C2B3B7201C81BEF000F17DC8 /* CitiesTableViewCell.swift */,
+				C2A6D05E1C81BA1E004879EE /* CitiesViewController.swift */,
 				C26D4D881C81534700E16D58 /* DemoCell.swift */,
 				C2777B3F1C81452400A6488A /* Assets.xcassets */,
 				C2777B411C81452400A6488A /* LaunchScreen.storyboard */,
@@ -256,7 +265,6 @@
 				C2777B311C81452400A6488A /* Sources */,
 				C2777B321C81452400A6488A /* Frameworks */,
 				C2777B331C81452400A6488A /* Resources */,
-				6328AA0AB523CD12D5BC40EE /* Embed Pods Frameworks */,
 				DC20B860F1C9E69E7F73E172 /* Copy Pods Resources */,
 			);
 			buildRules = (
@@ -306,6 +314,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2A6D0611C81BA25004879EE /* match.json in Resources */,
 				DCB146551C81AC0C0061F7F1 /* OpenSans-Italic.ttf in Resources */,
 				DCB146521C81AC0C0061F7F1 /* OpenSans-BoldItalic.ttf in Resources */,
 				C25FC4E41C81680C00C41538 /* blank timeline with line.png in Resources */,
@@ -339,21 +348,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		6328AA0AB523CD12D5BC40EE /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Launch Hackathon/Pods-Launch Hackathon-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DC20B860F1C9E69E7F73E172 /* Copy Pods Resources */ = {
@@ -390,9 +384,11 @@
 				C26D4DB61C81664000E16D58 /* BlockWebView.swift in Sources */,
 				DCB1465E1C81AE3D0061F7F1 /* ActivityCell.swift in Sources */,
 				C26D4DC31C81664000E16D58 /* UIButtonExtensions.swift in Sources */,
+				C2A6D05F1C81BA1E004879EE /* CitiesViewController.swift in Sources */,
 				C26D4DBD1C81664000E16D58 /* IntExtentions.swift in Sources */,
 				C26D4DAF1C81664000E16D58 /* ArrayExtensions.swift in Sources */,
 				C26D4DBE1C81664000E16D58 /* NSDateExtensions.swift in Sources */,
+				C2B3B7211C81BEF000F17DC8 /* CitiesTableViewCell.swift in Sources */,
 				C2777B3B1C81452400A6488A /* ViewController.swift in Sources */,
 				C26D4DCA1C81664000E16D58 /* UILabelExtensions.swift in Sources */,
 				C26D4DC41C81664000E16D58 /* UIColoredView.swift in Sources */,
