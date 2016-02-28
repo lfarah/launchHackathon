@@ -52,7 +52,7 @@ class ActivityCell: UITableViewCell {
         rating.settings.filledColor = UIColor.orangeColor()
         rating.settings.emptyBorderColor = UIColor.orangeColor()
         rating.settings.filledBorderColor = UIColor.orangeColor()
-        rating.settings.updateOnTouch = true
+        rating.settings.updateOnTouch = false
         contentView.addSubview(rating)
         
         address = UILabel(x: profileImageView.rightOffset(10), y: rating.bottomOffset(-15), w: frame.width, h: 20)
@@ -61,9 +61,9 @@ class ActivityCell: UITableViewCell {
         address.font = UIFont(name: FontName.HelveticaNeue.rawValue, size: 14)
         contentView.addSubview(address)
         
-        
         distanceLabel = UILabel(x: whiteRoundedCornerView.leftOffset(40), y: -15, w: frame.width, h: 20)
         distanceLabel.textAlignment = .Right
+        distanceLabel.font = UIFont(name: FontName.HelveticaNeue.rawValue, size: 14)
         distanceLabel.textColor = UIColor.grayColor()
         contentView.addSubview(distanceLabel)
     }
@@ -80,7 +80,7 @@ class ActivityCell: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         distanceLabel.frame = CGRectMake(whiteRoundedCornerView.leftOffset(40), whiteRoundedCornerView.topOffset(-8), frame.width, 20)
-        nameLabel.frame = CGRectMake(profileImageView.rightOffset(10), whiteRoundedCornerView.topOffset(-8), frame.width, 20)
+        nameLabel.frame = CGRectMake(profileImageView.rightOffset(10), whiteRoundedCornerView.topOffset(-8), 220, 20)
         rating.frame = CGRectMake(profileImageView.rightOffset(10), nameLabel.bottomOffset(5), frame.width, 20)
         address.frame = CGRectMake(profileImageView.rightOffset(10), rating.bottom, frame.width, 20)
 

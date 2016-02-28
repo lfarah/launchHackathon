@@ -16,7 +16,7 @@ class ActivityViewController: UIViewController {
     var mapView: UIView!
     var activityTableView: ActivityTableView!
     
-    var bannerHeight: CGFloat = 150
+    var bannerHeight: CGFloat = 133
     
     var activityList: [Activity] = []
     
@@ -46,39 +46,101 @@ class ActivityViewController: UIViewController {
     func createBannerView() {
         bannerView = UIView(x: 0, y: 0, w: ez.screenWidth, h: bannerHeight)
         
-        let bannerImageView = UIImageView(x: 0, y: 0, w: bannerView.w, h: bannerView.h)
-        bannerImageView.image = UIImage(named: "Bitmap")
-        bannerImageView.contentMode = .ScaleToFill
-        bannerView.addSubview(bannerImageView)
+        let fakeNavigationBar = UIView(x: 0, y: 0, w: bannerView.w, h: 80)
+        fakeNavigationBar.backgroundColor = UIColor(r: 40, g: 50, b: 57)
         
-        let bannerLabel = UILabel(x: 50, y: 50, w: 0, h: 30, fontSize: 32)
-        bannerLabel.text = "San Francisco"
-        bannerLabel.textColor = UIColor.whiteColor()
-        bannerLabel.fitWidth()
-        bannerView.addSubview(bannerLabel)
+        let fakeNavigationBarTitle = UILabel(x: 0, y: 0, w: 0, h: 0)
+        fakeNavigationBarTitle.text = "Maps"
+        fakeNavigationBarTitle.font = UIFont(name: FontName.HelveticaNeue.rawValue, size: 22)
+        fakeNavigationBarTitle.textColor = UIColor.whiteColor()
+        fakeNavigationBarTitle.fitSize()
+        fakeNavigationBarTitle.center = fakeNavigationBar.center
+        fakeNavigationBar.addSubview(fakeNavigationBarTitle)
         
-        let bannerButton = UIButton(x: bannerView.rightOffset(-80), y: bannerView.bottomOffset(-40), w: 70, h: 30)
-        bannerButton.backgroundColor = UIColor(r: 71, g: 161, b: 204)
-        bannerButton.layer.cornerRadius = 6
-        bannerButton.setTitle("LIST", forState: UIControlState.Normal)
-        bannerButton.setTitle("MAP", forState: UIControlState.Selected)
-        bannerButton.titleLabel?.font = UIFont(name: "HelveticaNeue", size: 14)
-        bannerButton.addTapGesture { (tap) -> () in
-            if bannerButton.selected {
-                // Go to map view
-                print("Go to map view")
-                self.mapView.hidden = false
-                self.activityTableView.hidden = true
-            } else {
-                // Go to list view
-                print("Go to list view")
-                self.mapView.hidden = true
-                self.activityTableView.hidden = false
-                self.activityTableView.tableView.reloadData()
-            }
-            bannerButton.selected.toggle()
+        let fakeNavigationBackButton = UIImageView( image: UIImage(named: "backbutton.png")!)
+        fakeNavigationBackButton.scaleImageFrameToWidth(width: 12)
+        fakeNavigationBackButton.center = CGPoint(x: 30, y: fakeNavigationBar.centerY)
+        fakeNavigationBar.addSubview(fakeNavigationBackButton)
+        
+        fakeNavigationBackButton.addTapGesture { (gesture) -> () in
+            // TODO:
+//            presentVC(asd)
         }
-        bannerView.addSubview(bannerButton)
+        
+        
+        bannerView.addSubview(fakeNavigationBar)
+        
+        let subBar = UIView(x: 0, y: fakeNavigationBar.bottom, w: bannerView.w, h: 53)
+        subBar.backgroundColor = UIColor(r: 25, g: 31, b: 40)
+        
+        let subBarRightButton = UIView(x: 0, y: 0, w: bannerView.w * 3 / 2, h: subBar.h)
+
+        let rightImage = UIImageView(image: UIImage(named: "burger.png")!)
+        rightImage.frame = CGRect(x: 0, y: 0, width: 15, height: 15)
+        rightImage.center = CGPoint(x: subBarRightButton.centerX, y: subBarRightButton.centerY - 5)
+        rightImage.tintColor = UIColor.whiteColor()
+        subBarRightButton.addSubview(rightImage)
+        
+        let rightLabel = UILabel(x: 0, y: rightImage.bottom, w: 0, h: 0)
+        rightLabel.textColor = UIColor.whiteColor()
+        rightLabel.text = "Map View"
+        rightLabel.font = UIFont(name: FontName.HelveticaNeue.rawValue, size: 11)
+        rightLabel.fitSize()
+        rightLabel.center = CGPoint(x: rightImage.centerX, y: rightImage.centerY + 20)
+        subBarRightButton.addSubview(rightLabel)
+        
+        subBar.addSubview(subBarRightButton)
+        
+        let seperatorView = UIView(x: subBar.centerX - 1, y: subBar.h / 6, w: 2, h: subBar.h * 2 / 3)
+        seperatorView.backgroundColor = UIColor.whiteColor()
+        seperatorView.alpha = 0.5
+        subBar.addSubview(seperatorView)
+        
+        
+        let subBarLeftButton = UIView(x: 0, y: 0, w: bannerView.w / 2, h: subBar.h)
+        
+        let leftImage = UIImageView(image: UIImage(named: "burger.png")!)
+        leftImage.frame = CGRect(x: 0, y: 0, width: 15, height: 15)
+        leftImage.center = CGPoint(x: subBarLeftButton.centerX, y: subBarLeftButton.centerY - 5)
+        leftImage.tintColor = UIColor.whiteColor()
+        subBarLeftButton.addSubview(leftImage)
+        
+        let leftLabel = UILabel(x: 0, y: leftImage.bottom, w: 0, h: 0)
+        leftLabel.textColor = UIColor.whiteColor()
+        leftLabel.text = "List View"
+        leftLabel.font = UIFont(name: FontName.HelveticaNeue.rawValue, size: 11)
+        leftLabel.fitSize()
+        leftLabel.center = CGPoint(x: leftImage.centerX, y: leftImage.centerY + 20)
+        subBarLeftButton.addSubview(leftLabel)
+        
+        subBar.addSubview(subBarLeftButton)
+        
+        bannerView.addSubview(subBar)
+        
+        // At first these should be deselected
+        leftImage.alpha = 0.5
+        leftLabel.alpha = 0.5
+        
+        subBarLeftButton.addTapGesture { (gesture) -> () in
+            // Go to list view
+            self.mapView.hidden = true
+            self.activityTableView.hidden = false
+            leftImage.alpha = 1
+            leftLabel.alpha = 1
+            rightImage.alpha = 0.5
+            rightLabel.alpha = 0.5
+
+        }
+        
+        subBarRightButton.addTapGesture { (gesture) -> () in
+            // Go to map view
+            self.mapView.hidden = false
+            self.activityTableView.hidden = true
+            leftImage.alpha = 0.5
+            leftLabel.alpha = 0.5
+            rightImage.alpha = 1
+            rightLabel.alpha = 1
+        }
         
         containerView.addSubview(bannerView)
     }
@@ -101,14 +163,13 @@ class ActivityViewController: UIViewController {
             newActivity.address = activity["address"] as! String
             newActivity.name = activity["name"]as! String
             newActivity.bookWebsite = activity["bookWebsite"]as! String
-            newActivity.description = activity["description"]as! String
+            newActivity.description = activity["descriptionLong"]as! String
             newActivity.distanceFromHotel = activity["distanceFromHotel"]as! Float
             newActivity.match = activity["match"]as! Float
-            newActivity.price = activity["price"]as! Float
+            newActivity.price = activity["price"]as! String
             newActivity.rating = activity["rating"]as! Float
             newActivity.ratingName = activity["ratingName"]as! String
             newActivity.ratingDescription = activity["ratingDescription"]as! String
-            newActivity.ratingStar = activity["ratingStar"]as! Int
             
             activityList.append(newActivity)
         }
