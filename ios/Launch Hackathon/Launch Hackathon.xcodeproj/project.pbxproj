@@ -55,6 +55,8 @@
 		C2C74B1B1C823D6200F535A2 /* STSpotLoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C74B181C823D6200F535A2 /* STSpotLoadView.swift */; };
 		C2EB86AB1C8228FA009FE49E /* activities.json in Resources */ = {isa = PBXBuildFile; fileRef = C2EB86AA1C8228FA009FE49E /* activities.json */; };
 		C2EB86AD1C823AE7009FE49E /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EB86AC1C823AE7009FE49E /* LoadingViewController.swift */; };
+		DC1305AB1C8278A2007946E9 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1305AA1C8278A2007946E9 /* Network.swift */; };
+		DC1305AD1C827951007946E9 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1305AC1C827951007946E9 /* Activity.swift */; };
 		DCB146451C81AB690061F7F1 /* FoldingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB146441C81AB690061F7F1 /* FoldingCell.swift */; };
 		DCB146511C81AC0C0061F7F1 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCB146471C81AC0C0061F7F1 /* OpenSans-Bold.ttf */; };
 		DCB146521C81AC0C0061F7F1 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCB146481C81AC0C0061F7F1 /* OpenSans-BoldItalic.ttf */; };
@@ -123,6 +125,8 @@
 		C2EB86AC1C823AE7009FE49E /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		CA073B9ACD371CD4A1BA5541 /* Pods-Launch Hackathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Launch Hackathon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Launch Hackathon/Pods-Launch Hackathon.debug.xcconfig"; sourceTree = "<group>"; };
 		CFF038C798DAC6FD5E4CF64D /* Pods_Launch_Hackathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Launch_Hackathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC1305AA1C8278A2007946E9 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		DC1305AC1C827951007946E9 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		DCB146441C81AB690061F7F1 /* FoldingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoldingCell.swift; sourceTree = "<group>"; };
 		DCB146471C81AC0C0061F7F1 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		DCB146481C81AC0C0061F7F1 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
@@ -234,6 +238,7 @@
 		C2777B371C81452400A6488A /* Launch Hackathon */ = {
 			isa = PBXGroup;
 			children = (
+				DC1305AE1C827957007946E9 /* Model */,
 				C25FC4E31C81680C00C41538 /* blank timeline with line.png */,
 				C2777B381C81452400A6488A /* AppDelegate.swift */,
 				C2777B3A1C81452400A6488A /* ActivityViewController.swift */,
@@ -249,6 +254,7 @@
 				C2777B3F1C81452400A6488A /* Assets.xcassets */,
 				C2777B411C81452400A6488A /* LaunchScreen.storyboard */,
 				C2777B441C81452400A6488A /* Info.plist */,
+				DC1305AA1C8278A2007946E9 /* Network.swift */,
 			);
 			path = "Launch Hackathon";
 			sourceTree = "<group>";
@@ -261,6 +267,14 @@
 				C2C74B181C823D6200F535A2 /* STSpotLoadView.swift */,
 			);
 			path = STSpotLoadView;
+			sourceTree = "<group>";
+		};
+		DC1305AE1C827957007946E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC1305AC1C827951007946E9 /* Activity.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		DCB146461C81AC0C0061F7F1 /* Fonts */ = {
@@ -424,6 +438,7 @@
 				C26D4DC71C81664000E16D58 /* UIFontExtensions.swift in Sources */,
 				C26D4D891C81534700E16D58 /* MainTableViewController.swift in Sources */,
 				C26D4DB71C81664000E16D58 /* BoolExtentions.swift in Sources */,
+				DC1305AD1C827951007946E9 /* Activity.swift in Sources */,
 				C26D4DB21C81664000E16D58 /* BlockPan.swift in Sources */,
 				C26D4DBB1C81664000E16D58 /* DoubleExtensions.swift in Sources */,
 				C26D4DB61C81664000E16D58 /* BlockWebView.swift in Sources */,
@@ -437,6 +452,7 @@
 				C2777B3B1C81452400A6488A /* ActivityViewController.swift in Sources */,
 				C26D4DCA1C81664000E16D58 /* UILabelExtensions.swift in Sources */,
 				C26D4DC41C81664000E16D58 /* UIColoredView.swift in Sources */,
+				DC1305AB1C8278A2007946E9 /* Network.swift in Sources */,
 				C26D4DB51C81664000E16D58 /* BlockTap.swift in Sources */,
 				C2777B391C81452400A6488A /* AppDelegate.swift in Sources */,
 				C26D4DC51C81664000E16D58 /* UIColorExtensions.swift in Sources */,
