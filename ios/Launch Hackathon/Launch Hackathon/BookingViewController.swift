@@ -10,6 +10,8 @@ import UIKit
 
 class BookingViewController: UIViewController {
   
+  @IBOutlet weak var lblActivitiesPrice: UILabel!
+  @IBOutlet weak var lblIncludingActivity: UILabel!
   @IBOutlet weak var lblPlanePrice: UILabel!
   @IBOutlet weak var lblHotel: UILabel!
   @IBOutlet weak var lblAirlines: UILabel!
@@ -32,9 +34,27 @@ class BookingViewController: UIViewController {
     }
     if let price = flight!["TotalPrice"]
     {
-      self.lblPlanePrice.text = "$\(price as! Double)"
+      self.lblPlanePrice.text = "$\(Int(price as! Double))"
+    }
+    guard let activities = dic["activities"] else
+    {
+      return
     }
     
+    var totalPrice = 0.0
+    for activity in activities as! [[String:AnyObject]]
+    {
+      let activityPriceString = activity["price"] as! String
+      let cutPriceString = activityPriceString[1...activityPriceString.length-1]
+      let priceDouble = cutPriceString.toDouble()
+      totalPrice += priceDouble!
+    }
+    let act = activities
+      as! [[String:AnyObject]]
+    let actFirst = act.last
+    let nameActFirst = actFirst!["name"] as! String
+    self.lblIncludingActivity.text = "Including \(nameActFirst)"
+    self.lblActivitiesPrice.text = "$\(Int(totalPrice))"
   }
   func getJSONData() -> [String:AnyObject]
   {
