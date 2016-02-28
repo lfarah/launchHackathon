@@ -94,7 +94,7 @@ class MainTableViewController: UITableViewController {
     {
       return cell
     }
-    cell.lblPriceActivity.text = "$\(price)"
+    cell.lblPriceActivity.text = "\(price)"
     cell.lblNameActivity.text = "\(name)"
     cell.lblDistanceActivity.text = "\(distanceFromHotel) mi."
     cell.lblAddressActivity.text = "\(address)"

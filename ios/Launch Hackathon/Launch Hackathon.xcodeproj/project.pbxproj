@@ -46,6 +46,7 @@
 		C2777B3B1C81452400A6488A /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2777B3A1C81452400A6488A /* ActivityViewController.swift */; };
 		C2777B401C81452400A6488A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2777B3F1C81452400A6488A /* Assets.xcassets */; };
 		C2777B431C81452400A6488A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2777B411C81452400A6488A /* LaunchScreen.storyboard */; };
+		C279109E1C82EF6100A6F7FF /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C279109D1C82EF6100A6F7FF /* BookingViewController.swift */; };
 		C27ABF8B1C825E5600B88F56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C26D4D8D1C8161C300E16D58 /* Main.storyboard */; };
 		C2A6D05F1C81BA1E004879EE /* CitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A6D05E1C81BA1E004879EE /* CitiesViewController.swift */; };
 		C2A6D0611C81BA25004879EE /* match.json in Resources */ = {isa = PBXBuildFile; fileRef = C2A6D0601C81BA25004879EE /* match.json */; };
@@ -115,6 +116,7 @@
 		C2777B3F1C81452400A6488A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2777B421C81452400A6488A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2777B441C81452400A6488A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C279109D1C82EF6100A6F7FF /* BookingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
 		C2A6D05E1C81BA1E004879EE /* CitiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesViewController.swift; sourceTree = "<group>"; };
 		C2A6D0601C81BA25004879EE /* match.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = match.json; sourceTree = "<group>"; };
 		C2B3B7201C81BEF000F17DC8 /* CitiesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesTableViewCell.swift; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 				DCB1465C1C81AE3D0061F7F1 /* ActivityCell.swift */,
 				C26D4D871C81534700E16D58 /* MainTableViewController.swift */,
 				C26D4D8D1C8161C300E16D58 /* Main.storyboard */,
+				C279109D1C82EF6100A6F7FF /* BookingViewController.swift */,
 				C2EB86AC1C823AE7009FE49E /* LoadingViewController.swift */,
 				C2B3B7201C81BEF000F17DC8 /* CitiesTableViewCell.swift */,
 				C2A6D05E1C81BA1E004879EE /* CitiesViewController.swift */,
@@ -475,6 +478,7 @@
 				C26D4DB81C81664000E16D58 /* CGFloatExtensions.swift in Sources */,
 				C26D4DCD1C81664000E16D58 /* UIViewExtensions.swift in Sources */,
 				DCB1465D1C81AE3D0061F7F1 /* ActivityTableView.swift in Sources */,
+				C279109E1C82EF6100A6F7FF /* BookingViewController.swift in Sources */,
 				C26D4DC81C81664000E16D58 /* UIImageExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
