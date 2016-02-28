@@ -163,14 +163,13 @@ class ActivityViewController: UIViewController {
             newActivity.address = activity["address"] as! String
             newActivity.name = activity["name"]as! String
             newActivity.bookWebsite = activity["bookWebsite"]as! String
-            newActivity.description = activity["description"]as! String
+            newActivity.description = activity["descriptionLong"]as! String
             newActivity.distanceFromHotel = activity["distanceFromHotel"]as! Float
             newActivity.match = activity["match"]as! Float
-            newActivity.price = activity["price"]as! Float
+            newActivity.price = activity["price"]as! String
             newActivity.rating = activity["rating"]as! Float
             newActivity.ratingName = activity["ratingName"]as! String
             newActivity.ratingDescription = activity["ratingDescription"]as! String
-            newActivity.ratingStar = activity["ratingStar"]as! Int
             
             activityList.append(newActivity)
         }
