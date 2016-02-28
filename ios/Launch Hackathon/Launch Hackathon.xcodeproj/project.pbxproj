@@ -58,6 +58,7 @@
 		C2EB86AD1C823AE7009FE49E /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EB86AC1C823AE7009FE49E /* LoadingViewController.swift */; };
 		DC1305AB1C8278A2007946E9 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1305AA1C8278A2007946E9 /* Network.swift */; };
 		DC1305AD1C827951007946E9 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1305AC1C827951007946E9 /* Activity.swift */; };
+		DC1305B01C830BA9007946E9 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1305AF1C830BA9007946E9 /* TabBarController.swift */; };
 		DCB146451C81AB690061F7F1 /* FoldingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB146441C81AB690061F7F1 /* FoldingCell.swift */; };
 		DCB146511C81AC0C0061F7F1 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCB146471C81AC0C0061F7F1 /* OpenSans-Bold.ttf */; };
 		DCB146521C81AC0C0061F7F1 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCB146481C81AC0C0061F7F1 /* OpenSans-BoldItalic.ttf */; };
@@ -129,6 +130,7 @@
 		CFF038C798DAC6FD5E4CF64D /* Pods_Launch_Hackathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Launch_Hackathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC1305AA1C8278A2007946E9 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		DC1305AC1C827951007946E9 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		DC1305AF1C830BA9007946E9 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		DCB146441C81AB690061F7F1 /* FoldingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoldingCell.swift; sourceTree = "<group>"; };
 		DCB146471C81AC0C0061F7F1 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		DCB146481C81AC0C0061F7F1 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 				DCB1465C1C81AE3D0061F7F1 /* ActivityCell.swift */,
 				C26D4D871C81534700E16D58 /* MainTableViewController.swift */,
 				C26D4D8D1C8161C300E16D58 /* Main.storyboard */,
+				DC1305AF1C830BA9007946E9 /* TabBarController.swift */,
 				C279109D1C82EF6100A6F7FF /* BookingViewController.swift */,
 				C2EB86AC1C823AE7009FE49E /* LoadingViewController.swift */,
 				C2B3B7201C81BEF000F17DC8 /* CitiesTableViewCell.swift */,
@@ -471,6 +474,7 @@
 				C26D4DB01C81664000E16D58 /* BlockButton.swift in Sources */,
 				C26D4DB41C81664000E16D58 /* BlockSwipe.swift in Sources */,
 				C2C74B191C823D6200F535A2 /* STAnimationProtocol.swift in Sources */,
+				DC1305B01C830BA9007946E9 /* TabBarController.swift in Sources */,
 				C26D4DC61C81664000E16D58 /* UIDeviceExtensions.swift in Sources */,
 				C2EB86AD1C823AE7009FE49E /* LoadingViewController.swift in Sources */,
 				C26D4DC21C81664000E16D58 /* StringExtensions.swift in Sources */,

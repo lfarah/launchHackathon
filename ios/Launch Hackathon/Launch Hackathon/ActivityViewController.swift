@@ -67,6 +67,10 @@ class ActivityViewController: UIViewController {
 //            presentVC(asd)
         }
         
+        let fakeNavigationSettingsButton = UIImageView( image: UIImage(named: "settings.png")!)
+        fakeNavigationSettingsButton.scaleImageFrameToWidth(width: 22)
+        fakeNavigationSettingsButton.center = CGPoint(x: fakeNavigationBar.w - 30, y: fakeNavigationBar.centerY)
+        fakeNavigationBar.addSubview(fakeNavigationSettingsButton)
         
         bannerView.addSubview(fakeNavigationBar)
         
@@ -75,7 +79,7 @@ class ActivityViewController: UIViewController {
         
         let subBarRightButton = UIView(x: 0, y: 0, w: bannerView.w * 3 / 2, h: subBar.h)
 
-        let rightImage = UIImageView(image: UIImage(named: "burger.png")!)
+        let rightImage = UIImageView(image: UIImage(named: "map.png")!)
         rightImage.frame = CGRect(x: 0, y: 0, width: 15, height: 15)
         rightImage.center = CGPoint(x: subBarRightButton.centerX, y: subBarRightButton.centerY - 5)
         rightImage.tintColor = UIColor.whiteColor()
