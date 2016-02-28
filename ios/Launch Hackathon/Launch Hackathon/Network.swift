@@ -14,9 +14,9 @@ struct Network {
         let jsonData = NSData(contentsOfFile: path!)
         do
         {
-            let jsonArray = try NSJSONSerialization.JSONObjectWithData(jsonData!, options: .MutableContainers) as! [AnyObject]
+          let jsonArray = try NSJSONSerialization.JSONObjectWithData(jsonData!, options: .MutableContainers) as! [String:AnyObject]
             
-            return jsonArray as!  [[String:AnyObject]]
+            return jsonArray["activities"] as!  [[String:AnyObject]]
         }
         catch{}
         

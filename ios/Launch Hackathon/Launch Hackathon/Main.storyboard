@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="b4c-9X-6PY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="e4b-bJ-N1J">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -28,16 +28,16 @@
         </mutableArray>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Booking View Controller-->
         <scene sceneID="JAZ-gC-LEN">
             <objects>
-                <viewController id="gcM-4K-OXC" sceneMemberID="viewController">
+                <viewController id="gcM-4K-OXC" customClass="BookingViewController" customModule="Launch_Hackathon" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Yl8-Rd-wQY"/>
                         <viewControllerLayoutGuide type="bottom" id="L8h-o7-o9c"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ve0-9J-EyY">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 32" translatesAutoresizingMaskIntoConstraints="NO" id="Uo1-Zh-Yfa">
@@ -136,15 +136,6 @@
                                     <rect key="frame" x="306" y="282" width="83" height="44"/>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$400" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7YL-FP-V5c">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="329" y="289" width="60" height="31"/>
-                                </variation>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plane Ticket" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLJ-xO-AbO">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
@@ -191,7 +182,7 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$200" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QnP-8Y-P4n">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
@@ -237,7 +228,7 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$400" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlI-GD-LeH">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
@@ -281,6 +272,15 @@
                                     <segue destination="JFH-hJ-17Q" kind="show" id="efx-bf-vtl"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$400.35" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7YL-FP-V5c">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="329" y="288" width="70" height="31"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -288,7 +288,6 @@
                                 <exclude reference="Uo1-Zh-Yfa"/>
                                 <exclude reference="44R-X5-Dge"/>
                                 <exclude reference="y1J-h1-pmO"/>
-                                <exclude reference="7YL-FP-V5c"/>
                                 <exclude reference="xLJ-xO-AbO"/>
                                 <exclude reference="79S-d0-t9Q"/>
                                 <exclude reference="HRp-OL-b69"/>
@@ -306,6 +305,7 @@
                                 <exclude reference="QpE-cJ-trX"/>
                                 <exclude reference="vOd-9W-PxP"/>
                                 <exclude reference="dBj-VF-U77"/>
+                                <exclude reference="7YL-FP-V5c"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -313,7 +313,6 @@
                                 <include reference="Uo1-Zh-Yfa"/>
                                 <include reference="44R-X5-Dge"/>
                                 <include reference="y1J-h1-pmO"/>
-                                <include reference="7YL-FP-V5c"/>
                                 <include reference="xLJ-xO-AbO"/>
                                 <include reference="79S-d0-t9Q"/>
                                 <include reference="HRp-OL-b69"/>
@@ -331,9 +330,15 @@
                                 <include reference="QpE-cJ-trX"/>
                                 <include reference="vOd-9W-PxP"/>
                                 <include reference="dBj-VF-U77"/>
+                                <include reference="7YL-FP-V5c"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="lblAirlines" destination="79S-d0-t9Q" id="m8m-fs-zCO"/>
+                        <outlet property="lblHotel" destination="gFm-aj-FwI" id="9wm-nE-Uc3"/>
+                        <outlet property="lblPlanePrice" destination="7YL-FP-V5c" id="Qvv-4O-yKC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ByJ-4H-YXi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -421,12 +426,6 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Second Bar" translatesAutoresizingMaskIntoConstraints="NO" id="zxT-b6-b9Q">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="79" width="414" height="53"/>
-                                </variation>
-                            </imageView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dnY-fl-J9t">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
@@ -442,24 +441,30 @@
                                     <rect key="frame" x="16" y="94" width="292" height="21"/>
                                 </variation>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Second Bar" translatesAutoresizingMaskIntoConstraints="NO" id="zxT-b6-b9Q">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="78" width="414" height="53"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="A8U-sM-zfJ"/>
                                 <exclude reference="RhN-dk-aRp"/>
-                                <exclude reference="zxT-b6-b9Q"/>
                                 <exclude reference="dnY-fl-J9t"/>
                                 <exclude reference="LS8-ZN-0l3"/>
+                                <exclude reference="zxT-b6-b9Q"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="A8U-sM-zfJ"/>
                                 <include reference="RhN-dk-aRp"/>
-                                <include reference="zxT-b6-b9Q"/>
                                 <include reference="dnY-fl-J9t"/>
                                 <include reference="LS8-ZN-0l3"/>
+                                <include reference="zxT-b6-b9Q"/>
                             </mask>
                         </variation>
                     </view>
