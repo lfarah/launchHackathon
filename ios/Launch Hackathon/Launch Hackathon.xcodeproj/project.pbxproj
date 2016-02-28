@@ -11,7 +11,6 @@
 		C25FC4E41C81680C00C41538 /* blank timeline with line.png in Resources */ = {isa = PBXBuildFile; fileRef = C25FC4E31C81680C00C41538 /* blank timeline with line.png */; };
 		C26D4D891C81534700E16D58 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26D4D871C81534700E16D58 /* MainTableViewController.swift */; };
 		C26D4D8A1C81534700E16D58 /* DemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26D4D881C81534700E16D58 /* DemoCell.swift */; };
-		C26D4D8E1C8161C300E16D58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C26D4D8D1C8161C300E16D58 /* Main.storyboard */; };
 		C26D4DAF1C81664000E16D58 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26D4D901C81664000E16D58 /* ArrayExtensions.swift */; };
 		C26D4DB01C81664000E16D58 /* BlockButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26D4D911C81664000E16D58 /* BlockButton.swift */; };
 		C26D4DB11C81664000E16D58 /* BlockLongPress.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26D4D921C81664000E16D58 /* BlockLongPress.swift */; };
@@ -47,6 +46,7 @@
 		C2777B3B1C81452400A6488A /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2777B3A1C81452400A6488A /* ActivityViewController.swift */; };
 		C2777B401C81452400A6488A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2777B3F1C81452400A6488A /* Assets.xcassets */; };
 		C2777B431C81452400A6488A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2777B411C81452400A6488A /* LaunchScreen.storyboard */; };
+		C27ABF8B1C825E5600B88F56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C26D4D8D1C8161C300E16D58 /* Main.storyboard */; };
 		C2A6D05F1C81BA1E004879EE /* CitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A6D05E1C81BA1E004879EE /* CitiesViewController.swift */; };
 		C2A6D0611C81BA25004879EE /* match.json in Resources */ = {isa = PBXBuildFile; fileRef = C2A6D0601C81BA25004879EE /* match.json */; };
 		C2B3B7211C81BEF000F17DC8 /* CitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B3B7201C81BEF000F17DC8 /* CitiesTableViewCell.swift */; };
@@ -351,8 +351,8 @@
 				DCB146571C81AC0C0061F7F1 /* OpenSans-LightItalic.ttf in Resources */,
 				C2777B401C81452400A6488A /* Assets.xcassets in Resources */,
 				DCB146511C81AC0C0061F7F1 /* OpenSans-Bold.ttf in Resources */,
-				C26D4D8E1C8161C300E16D58 /* Main.storyboard in Resources */,
 				DCB1465A1C81AC0C0061F7F1 /* OpenSans-SemiboldItalic.ttf in Resources */,
+				C27ABF8B1C825E5600B88F56 /* Main.storyboard in Resources */,
 				C2EB86AB1C8228FA009FE49E /* activities.json in Resources */,
 				DCB146561C81AC0C0061F7F1 /* OpenSans-Light.ttf in Resources */,
 				DCB146581C81AC0C0061F7F1 /* OpenSans-Regular.ttf in Resources */,

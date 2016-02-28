@@ -9,7 +9,7 @@
 import UIKit
 
 struct STConfiguration {
-    static let AnimationDuration: NSTimeInterval = 0.8
+    static let AnimationDuration: NSTimeInterval = 0.6
     static let SpotDiameter: CGFloat = 10
     static let SpotCount: Int = 4
     static let MainColor: UIColor = UIColor.whiteColor()
