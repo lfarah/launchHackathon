@@ -1,2 +1,2 @@
-# launchHackathon
+# Launch Hackathon
 Launch
