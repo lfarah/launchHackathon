@@ -16,7 +16,7 @@ class ActivityViewController: UIViewController {
     var mapView: UIView!
     var activityTableView: ActivityTableView!
     
-    var bannerHeight: CGFloat = 150
+    var bannerHeight: CGFloat = 133
     
     var activityList: [Activity] = []
     
@@ -46,39 +46,68 @@ class ActivityViewController: UIViewController {
     func createBannerView() {
         bannerView = UIView(x: 0, y: 0, w: ez.screenWidth, h: bannerHeight)
         
-        let bannerImageView = UIImageView(x: 0, y: 0, w: bannerView.w, h: bannerView.h)
-        bannerImageView.image = UIImage(named: "Bitmap")
-        bannerImageView.contentMode = .ScaleToFill
-        bannerView.addSubview(bannerImageView)
+        let fakeNavigationBar = UIView(x: 0, y: 0, w: bannerView.w, h: 80)
+        fakeNavigationBar.backgroundColor = UIColor(r: 40, g: 50, b: 57)
         
-        let bannerLabel = UILabel(x: 50, y: 50, w: 0, h: 30, fontSize: 32)
-        bannerLabel.text = "San Francisco"
-        bannerLabel.textColor = UIColor.whiteColor()
-        bannerLabel.fitWidth()
-        bannerView.addSubview(bannerLabel)
+        let fakeNavigationBarTitle = UILabel(x: 0, y: 0, w: 0, h: 0)
+        fakeNavigationBarTitle.text = "MAPS"
+        fakeNavigationBarTitle.textColor = UIColor.whiteColor()
+        fakeNavigationBarTitle.fitSize()
+        fakeNavigationBarTitle.center = fakeNavigationBar.center
+        fakeNavigationBar.addSubview(fakeNavigationBarTitle)
         
-        let bannerButton = UIButton(x: bannerView.rightOffset(-80), y: bannerView.bottomOffset(-40), w: 70, h: 30)
-        bannerButton.backgroundColor = UIColor(r: 71, g: 161, b: 204)
-        bannerButton.layer.cornerRadius = 6
-        bannerButton.setTitle("LIST", forState: UIControlState.Normal)
-        bannerButton.setTitle("MAP", forState: UIControlState.Selected)
-        bannerButton.titleLabel?.font = UIFont(name: "HelveticaNeue", size: 14)
-        bannerButton.addTapGesture { (tap) -> () in
-            if bannerButton.selected {
-                // Go to map view
-                print("Go to map view")
-                self.mapView.hidden = false
-                self.activityTableView.hidden = true
-            } else {
-                // Go to list view
-                print("Go to list view")
-                self.mapView.hidden = true
-                self.activityTableView.hidden = false
-                self.activityTableView.tableView.reloadData()
-            }
-            bannerButton.selected.toggle()
-        }
-        bannerView.addSubview(bannerButton)
+        bannerView.addSubview(fakeNavigationBar)
+        
+        let subBar = UIView(x: 0, y: fakeNavigationBar.bottom, w: bannerView.w, h: 53)
+        subBar.backgroundColor = UIColor(r: 25, g: 31, b: 40)
+        
+        let subBarLeftButton = UIImageView()
+        subBarLeftButton.image = UIImage(named: "burger")
+        subBarLeftButton.center = CGPoint(x: subBar.centerX / 2, y: subBar.centerY)
+        subBarLeftButton.resizeToFitSubviews()
+        subBar.addSubview(subBarLeftButton)
+        
+        let subBarRightButton = UIImageView()
+        subBarRightButton.image = UIImage(named: "burger")
+        subBarRightButton.center = CGPoint(x: subBar.centerX * 3 / 2, y: subBar.centerY)
+        subBarRightButton.resizeToFitSubviews()
+        subBar.addSubview(subBarRightButton)
+        
+        bannerView.addSubview(subBar)
+        
+//        let bannerImageView = UIImageView(x: 0, y: 0, w: bannerView.w, h: bannerView.h)
+//        bannerImageView.image = UIImage(named: "Bitmap")
+//        bannerImageView.contentMode = .ScaleToFill
+//        bannerView.addSubview(bannerImageView)
+//        
+//        let bannerLabel = UILabel(x: 50, y: 50, w: 0, h: 30, fontSize: 32)
+//        bannerLabel.text = "San Francisco"
+//        bannerLabel.textColor = UIColor.whiteColor()
+//        bannerLabel.fitWidth()
+//        bannerView.addSubview(bannerLabel)
+//        
+//        let bannerButton = UIButton(x: bannerView.rightOffset(-80), y: bannerView.bottomOffset(-40), w: 70, h: 30)
+//        bannerButton.backgroundColor = UIColor(r: 71, g: 161, b: 204)
+//        bannerButton.layer.cornerRadius = 6
+//        bannerButton.setTitle("LIST", forState: UIControlState.Normal)
+//        bannerButton.setTitle("MAP", forState: UIControlState.Selected)
+//        bannerButton.titleLabel?.font = UIFont(name: "HelveticaNeue", size: 14)
+//        bannerButton.addTapGesture { (tap) -> () in
+//            if bannerButton.selected {
+//                // Go to map view
+//                print("Go to map view")
+//                self.mapView.hidden = false
+//                self.activityTableView.hidden = true
+//            } else {
+//                // Go to list view
+//                print("Go to list view")
+//                self.mapView.hidden = true
+//                self.activityTableView.hidden = false
+//                self.activityTableView.tableView.reloadData()
+//            }
+//            bannerButton.selected.toggle()
+//        }
+//        bannerView.addSubview(bannerButton)
         
         containerView.addSubview(bannerView)
     }
