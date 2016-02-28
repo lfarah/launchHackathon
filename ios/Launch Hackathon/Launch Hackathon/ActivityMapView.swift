@@ -67,14 +67,8 @@ class ActivityMapView: UIView {
         //        let newPoint = AGSPoint(x: -122.4194155,y: 37.7749295, spatialReference: AGSSpatialReference.wgs84SpatialReference())
         
         let reprojectedPoint = geometryEngine.projectGeometry(newPoint, toSpatialReference: AGSSpatialReference.webMercatorSpatialReference())
-        let graphic = AGSGraphic(geometry: reprojectedPoint, symbol: pushpin, attributes: nil)
+        let graphic = AGSGraphic(geometry: reprojectedPoint, symbol: pushpin, attributes: ["name": activityName, "location": activityLocation])
         graphicLayer.addGraphic(graphic)
-        
-        self.calloutTemplate = AGSCalloutTemplate()
-        self.calloutTemplate.titleTemplate = activityName
-        self.calloutTemplate.detailTemplate = activityLocation
-        self.graphicLayer.calloutDelegate = self.calloutTemplate
-        
         
         mapView.zoomToScale(500000, withCenterPoint: reprojectedPoint as! AGSPoint, animated: true)
         return reprojectedPoint
@@ -107,6 +101,15 @@ extension ActivityMapView: AGSMapViewLayerDelegate {
 }
 
 extension ActivityMapView: AGSCalloutDelegate {
+    
+    func callout(callout: AGSCallout!, willShowForFeature feature: AGSFeature!, layer: AGSLayer!, mapPoint: AGSPoint!) -> Bool {
+        let graphic = feature as! AGSGraphic
+        
+        self.mapView.callout.title = graphic.attributeAsStringForKey("name")
+        self.mapView.callout.detail = graphic.attributeAsStringForKey("location")
+        return true
+    }
+    
     func didClickAccessoryButtonForCallout(callout: AGSCallout!) {
         
         self.selectedGraphic = callout.representedObject as! AGSGraphic
@@ -145,8 +148,15 @@ extension ActivityMapView: AGSLocatorDelegate {
                 
                 let pt = bestCandidate.graphic.geometry as! AGSPoint
                 
-                let name = bestCandidate.graphic.attributeForKey("PlaceName") as? String
-                let location = bestCandidate.graphic.attributeForKey("Place_addr") as? String
+                var name = bestCandidate.graphic.attributeForKey("PlaceName") as? String
+                if name == "" {
+                    name = bestCandidate.name
+                }
+                
+                var location = bestCandidate.graphic.attributeForKey("Place_addr") as? String
+                if location == "" {
+                    location = bestCandidate.graphic.attributeForKey("Match_addr") as? String
+                }
 //                let type = bestCandidate.graphic.attributeForKey("Type") as? String
                 
                 if let name = name {
