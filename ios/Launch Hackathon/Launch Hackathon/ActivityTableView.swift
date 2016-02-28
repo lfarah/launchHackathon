@@ -13,11 +13,11 @@ class ActivityTableView: UIView {
     
     var tableView: UITableView!
     
-    var cityData: [String] = []
+    var activityList: [Activity] = []
     
-    init(frame: CGRect, data someData : [String]) {
+    init(frame: CGRect, data activities : [Activity]) {
         super.init(frame: frame)
-        cityData = someData
+        activityList = activities
         
         self.backgroundColor = UIColor.grayColor()
         self.createTableView()
@@ -42,18 +42,18 @@ extension ActivityTableView: UITableViewDelegate, UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         //datasource method returning the what cell contains
         let cell = tableView.dequeueReusableCellWithIdentifier( NSStringFromClass(ActivityCell), forIndexPath: indexPath) as! ActivityCell
-        cell.nameLabel?.text = cityData[indexPath.row]
-        cell.distanceLabel.text = "1.8 mi"
+        cell.nameLabel?.text = activityList[indexPath.row].name
+        cell.distanceLabel.text = String(activityList[indexPath.row].distanceFromHotel) + " miles"
         cell.profileImageView.image = UIImage(named: "Bitmap")
-        cell.rating.rating = 4
-        cell.address.text = "Hwy 101, Presidio"
+        cell.rating.rating = Double(activityList[indexPath.row].rating)
+        cell.address.text = activityList[indexPath.row].address
         
         return cell
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //datasource method returning no. of rows
-        return cityData.count
+        return activityList.count
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {

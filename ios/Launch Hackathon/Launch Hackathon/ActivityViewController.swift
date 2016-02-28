@@ -18,12 +18,20 @@ class ActivityViewController: UIViewController {
     
     var bannerHeight: CGFloat = 150
     
-    var cityData: [String] = []
+    var activityList: [Activity] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        createView()
+        containerView = UIView(x: 0, y: 0, w: ez.screenWidth, h: ez.screenHeight)
+        
+        getData()
+        
+        createBannerView()
+        createMapView()
+        createTableView()
+        
+        view.addSubview(containerView)
     }
     
     override func didReceiveMemoryWarning() {
@@ -33,16 +41,6 @@ class ActivityViewController: UIViewController {
     
     override func prefersStatusBarHidden() -> Bool {
         return true
-    }
-    
-    func createView() {
-        containerView = UIView(x: 0, y: 0, w: ez.screenWidth, h: ez.screenHeight)
-        
-        createBannerView()
-        createMapView()
-        createTableView()
-        
-        view.addSubview(containerView)
     }
     
     func createBannerView() {
@@ -86,13 +84,33 @@ class ActivityViewController: UIViewController {
     }
     
     func createMapView() {
-        mapView = ActivityMapView(x: containerView.x, y: bannerHeight, w: containerView.w, h: containerView.h - bannerHeight)
+        mapView = ActivityMapView(frame: CGRect(x: containerView.x, y: bannerHeight, w: containerView.w, h: containerView.h - bannerHeight), data: activityList)
         containerView.addSubview(mapView)
     }
     
     func createTableView() {
-        activityTableView = ActivityTableView(frame: CGRect(x: containerView.x, y: bannerHeight, w: containerView.w, h: containerView.h - bannerHeight), data: ["Golden Gate Bridge", "Golden Gate Bridge","Golden Gate Bridge", "Golden Gate Bridge","Golden Gate Bridge", "Golden Gate Bridge'","Golden Gate Bridge", "Golden Gate Bridge","Golden Gate Bridge", "Golden Gate Bridge"])
+        activityTableView = ActivityTableView(frame: CGRect(x: containerView.x, y: bannerHeight, w: containerView.w, h: containerView.h - bannerHeight), data: activityList)
         containerView.addSubview(activityTableView)
         activityTableView.hidden = true
+    }
+    
+    func getData() {
+        let jsonData = Network.getJSONData()
+        for activity in jsonData {
+            var newActivity = Activity()
+            newActivity.address = activity["address"] as! String
+            newActivity.name = activity["name"]as! String
+            newActivity.bookWebsite = activity["bookWebsite"]as! String
+            newActivity.description = activity["description"]as! String
+            newActivity.distanceFromHotel = activity["distanceFromHotel"]as! Float
+            newActivity.match = activity["match"]as! Float
+            newActivity.price = activity["price"]as! Float
+            newActivity.rating = activity["rating"]as! Float
+            newActivity.ratingName = activity["ratingName"]as! String
+            newActivity.ratingDescription = activity["ratingDescription"]as! String
+            newActivity.ratingStar = activity["ratingStar"]as! Int
+            
+            activityList.append(newActivity)
+        }
     }
 }

@@ -43,7 +43,7 @@ class MainTableViewController: UITableViewController {
     self.tableView.backgroundColor = .clearColor()
     //      self.setBackgroundImage("blank timeline with line.png")
     
-    activities = self.readAlgorithm()
+    activities = Network.getJSONData()
     self.tableView.reloadData()
   }
   
@@ -132,20 +132,5 @@ class MainTableViewController: UITableViewController {
       }, completion: nil)
     
     
-  }
-  func readAlgorithm() -> [[String:AnyObject]]
-  {
-    let path = NSBundle.mainBundle().pathForResource("activities", ofType: "json")
-    let jsonData = NSData(contentsOfFile: path!)
-    do
-    {
-      let jsonArray = try NSJSONSerialization.JSONObjectWithData(jsonData!, options: .MutableContainers) as! [AnyObject]
-      
-      return jsonArray as!  [[String:AnyObject]]
-    }
-    catch{}
-    
-    return [[String:AnyObject]]()
-  }
-  
+  }  
 }
