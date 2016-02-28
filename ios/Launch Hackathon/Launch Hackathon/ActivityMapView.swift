@@ -41,7 +41,7 @@ class ActivityMapView: UIView {
         self.mapView.layerDelegate = self
         self.mapView.callout.delegate = self
         
-        let url = NSURL(string: "http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer")
+        let url = NSURL(string: Network.baseMapURL)
         let tiledLayer = AGSTiledMapServiceLayer(URL: url)
         mapView.addMapLayer(tiledLayer, withName: "Basemap Tiled Layer")
         

@@ -67,10 +67,20 @@ class ActivityViewController: UIViewController {
       //            presentVC(asd)
     }
     
-            let fakeNavigationSettingsButton = UIImageView( image: UIImage(named: "settings.png")!)
-            fakeNavigationSettingsButton.scaleImageFrameToWidth(width: 22)
-            fakeNavigationSettingsButton.center = CGPoint(x: fakeNavigationBar.w - 30, y: fakeNavigationBar.centerY)
-            fakeNavigationBar.addSubview(fakeNavigationSettingsButton)
+    let fakeNavigationSettingsButton = UIImageView( image: UIImage(named: "settings.png")!)
+    fakeNavigationSettingsButton.scaleImageFrameToWidth(width: 22)
+    fakeNavigationSettingsButton.center = CGPoint(x: fakeNavigationBar.w - 30, y: fakeNavigationBar.centerY)
+    fakeNavigationBar.addSubview(fakeNavigationSettingsButton)
+    
+    fakeNavigationSettingsButton.addTapGesture { (gesture) -> () in
+//        presentVC("")
+        
+        let possibleBaseMaps = ["http://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer", "http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer", "http://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer", "http://services.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer", "http://services.arcgisonline.com/ArcGIS/rest/services/Ocean_Basemap/MapServer", "http://services.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer", "http://tiles.arcgis.com/tiles/IEuSomXfi6iB7a25/arcgis/rest/services/World_Globe_1790/MapServer", "http://tiles.arcgis.com/tiles/IEuSomXfi6iB7a25/arcgis/rest/services/World_Globe_1812/MapServer"]
+        
+        Network.baseMapURL = possibleBaseMaps.random()
+        
+        self.createMapView()
+    }
     
     bannerView.addSubview(fakeNavigationBar)
     

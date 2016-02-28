@@ -9,6 +9,9 @@
 import Foundation
 
 struct Network {
+    
+    static var baseMapURL = "http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer"
+    
     static func getJSONData() -> [[String:AnyObject]] {
         let path = NSBundle.mainBundle().pathForResource("activities", ofType: "json")
         let jsonData = NSData(contentsOfFile: path!)
