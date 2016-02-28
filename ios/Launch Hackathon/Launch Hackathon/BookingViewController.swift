@@ -37,7 +37,7 @@ class BookingViewController: UIViewController {
       self.lblPlanePrice.text = "$\(Int(price as! Double))"
     }
     guard let activities = dic["activities"] else
-    {
+ {
       return
     }
     
