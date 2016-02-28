@@ -10,12 +10,11 @@ struct Activity {
     var name: String!
     var distanceFromHotel: Float!
     var address: String!
-    var price: Float!
+    var price: String!
     var match: Float!
     var rating: Float!
     var ratingName: String!
     var ratingDescription: String!
-    var ratingStar: Int!
     var description: String!
     var bookWebsite: String!
 }
