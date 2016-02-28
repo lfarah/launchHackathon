@@ -1,41 +1,41 @@
- [
-  {
-  "name": "Inner Sunset",
-  "distanceFromHotel": 1.1,
-  "address": "Inner Sunset - San Francisco,CA",
-  "price": 40,
-  "match": 85,
-  "rating": 2,
-  "ratingName": "John Snow",
-  "ratingDescription": "I loved Golden Gate Bridge. It's a very relaxing place!",
-  "ratingStar": 5,
-  "description": "Golden Gate Bridge is specially breathtaking in the morning",
-  "bookWebsite": "http://www.expedia.com"
-  },
-  {
-  "name": "Lombard Street",
-  "distanceFromHotel": 4.7,
-  "address": "Lombard Street - San Francisco,CA",
-  "price": 0,
-  "match": 85,
-  "rating": 5,
-  "ratingName": "John Snow",
-  "ratingDescription": "I loved Golden Gate Bridge. It's a very relaxing place!",
-  "ratingStar": 5,
-  "description": "Golden Gate Bridge is specially breathtaking in the morning",
-  "bookWebsite": "http://www.expedia.com"
-  },
-  {
-  "name": "McDonnalds",
-  "distanceFromHotel": 0.2,
-  "address": "McDonnalds - San Francisco,CA",
-  "price": 5,
-  "match": 85,
-  "rating": 3.5,
-  "ratingName": "John Snow",
-  "ratingDescription": "I loved Golden Gate Bridge. It's a very relaxing place!",
-  "ratingStar": 5,
-  "description": "Golden Gate Bridge is specially breathtaking in the morning",
-  "bookWebsite": "http://www.expedia.com"
-  }
-  ]
+[
+ {
+ "name": "Golden Gate Bridge",
+ "distanceFromHotel": 1.1,
+ "address": "Golden Gate Bridge - San Francisco,CA",
+ "price": 40,
+ "match": 85,
+ "rating": 4,
+ "ratingName": "John Snow",
+ "ratingDescription": "I loved Golden Gate Bridge. It's a very relaxing place!",
+ "ratingStar": 2.2,
+ "description": "Golden Gate Bridge is specially breathtaking in the morning",
+ "bookWebsite": "http://www.expedia.com"
+ },
+ {
+ "name": "Bourbon & Branch",
+ "distanceFromHotel": 4.7,
+ "address": "501 Jones St, San Francisco, CA",
+ "price": 0,
+ "match": 85,
+ "rating": 3.5,
+ "ratingName": "John Snow",
+ "ratingDescription": "I loved Golden Gate Bridge. It's a very relaxing place!",
+ "ratingStar": 5,
+ "description": "Golden Gate Bridge is specially breathtaking in the morning",
+ "bookWebsite": "http://www.expedia.com"
+ },
+ {
+ "name": "Smuggler's Cove",
+ "distanceFromHotel": 0.2,
+ "address": "650 Gough St, San Francisco, CA",
+ "price": 5,
+ "match": 85,
+ "rating": 4.8,
+ "ratingName": "John Snow",
+ "ratingDescription": "I loved Golden Gate Bridge. It's a very relaxing place!",
+ "ratingStar": 5,
+ "description": "Golden Gate Bridge is specially breathtaking in the morning",
+ "bookWebsite": "http://www.expedia.com"
+ }
+ ]

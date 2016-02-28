@@ -28,6 +28,317 @@
         </mutableArray>
     </customFonts>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="JAZ-gC-LEN">
+            <objects>
+                <viewController id="gcM-4K-OXC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Yl8-Rd-wQY"/>
+                        <viewControllerLayoutGuide type="bottom" id="L8h-o7-o9c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ve0-9J-EyY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 32" translatesAutoresizingMaskIntoConstraints="NO" id="Uo1-Zh-Yfa">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="128"/>
+                                </variation>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="44R-X5-Dge">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OJ4-nW-zTH">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="198" y="25" width="1" height="77"/>
+                                        </variation>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Departure on" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9NN-Gi-PCm">
+                                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="30" y="25" width="149" height="31"/>
+                                        </variation>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CalendarIcon" translatesAutoresizingMaskIntoConstraints="NO" id="50K-fV-qNT">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="30" y="64" width="32" height="36"/>
+                                        </variation>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17 June 2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMQ-Ed-JXr">
+                                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="70" y="71" width="101" height="21"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Returning on" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCc-hl-osd">
+                                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="226" y="24" width="149" height="31"/>
+                                        </variation>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CalendarIcon" translatesAutoresizingMaskIntoConstraints="NO" id="emJ-iT-cBv">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="226" y="63" width="32" height="36"/>
+                                        </variation>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 July 2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnJ-P5-qpU">
+                                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="278" y="70" width="89" height="21"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.17254901959999999" green="0.1960784314" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="OJ4-nW-zTH"/>
+                                        <exclude reference="9NN-Gi-PCm"/>
+                                        <exclude reference="50K-fV-qNT"/>
+                                        <exclude reference="uMQ-Ed-JXr"/>
+                                        <exclude reference="MCc-hl-osd"/>
+                                        <exclude reference="emJ-iT-cBv"/>
+                                        <exclude reference="dnJ-P5-qpU"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="128" width="400" height="128"/>
+                                    <mask key="subviews">
+                                        <include reference="OJ4-nW-zTH"/>
+                                        <include reference="9NN-Gi-PCm"/>
+                                        <include reference="50K-fV-qNT"/>
+                                        <include reference="uMQ-Ed-JXr"/>
+                                        <include reference="MCc-hl-osd"/>
+                                        <include reference="emJ-iT-cBv"/>
+                                        <include reference="dnJ-P5-qpU"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 188" translatesAutoresizingMaskIntoConstraints="NO" id="y1J-h1-pmO">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="306" y="282" width="83" height="44"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$400" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7YL-FP-V5c">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="329" y="289" width="60" height="31"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plane Ticket" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLJ-xO-AbO">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="93" y="269" width="164" height="33"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="American Airlines" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="79S-d0-t9Q">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="93" y="293" width="152" height="33"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Plane" translatesAutoresizingMaskIntoConstraints="NO" id="HRp-OL-b69">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="24" y="282" width="52" height="21"/>
+                                </variation>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8UG-pJ-SY2">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="339" width="400" height="2"/>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kcM-bV-9Pq">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="419" width="400" height="2"/>
+                                </variation>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 188" translatesAutoresizingMaskIntoConstraints="NO" id="bVF-Jx-WKG">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="306" y="362" width="83" height="44"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$200" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QnP-8Y-P4n">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="329" y="369" width="60" height="31"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You're staying at" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpY-PK-FJt">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="88" y="349" width="198" height="33"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trump Tower" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFm-aj-FwI">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="93" y="378" width="152" height="33"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HotelIcon" translatesAutoresizingMaskIntoConstraints="NO" id="FFG-IA-Oa7">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="29" y="362" width="42" height="24"/>
+                                </variation>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="On2-dy-aae">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="499" width="400" height="2"/>
+                                </variation>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 188" translatesAutoresizingMaskIntoConstraints="NO" id="gD3-Kk-ax6">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="306" y="442" width="83" height="44"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$400" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlI-GD-LeH">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="329" y="449" width="60" height="31"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9 Activities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ko7-xQ-BWM">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="93" y="429" width="133" height="33"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Including Disney World(3 days)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QpE-cJ-trX">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="93" y="454" width="237" height="33"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Activity" translatesAutoresizingMaskIntoConstraints="NO" id="vOd-9W-PxP">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="29" y="442" width="42" height="24"/>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBj-VF-U77">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.73725490196078436" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="BOOK NOW">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="675" width="414" height="61"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="JFH-hJ-17Q" kind="show" id="efx-bf-vtl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Uo1-Zh-Yfa"/>
+                                <exclude reference="44R-X5-Dge"/>
+                                <exclude reference="y1J-h1-pmO"/>
+                                <exclude reference="7YL-FP-V5c"/>
+                                <exclude reference="xLJ-xO-AbO"/>
+                                <exclude reference="79S-d0-t9Q"/>
+                                <exclude reference="HRp-OL-b69"/>
+                                <exclude reference="8UG-pJ-SY2"/>
+                                <exclude reference="kcM-bV-9Pq"/>
+                                <exclude reference="bVF-Jx-WKG"/>
+                                <exclude reference="QnP-8Y-P4n"/>
+                                <exclude reference="kpY-PK-FJt"/>
+                                <exclude reference="gFm-aj-FwI"/>
+                                <exclude reference="FFG-IA-Oa7"/>
+                                <exclude reference="On2-dy-aae"/>
+                                <exclude reference="gD3-Kk-ax6"/>
+                                <exclude reference="dlI-GD-LeH"/>
+                                <exclude reference="Ko7-xQ-BWM"/>
+                                <exclude reference="QpE-cJ-trX"/>
+                                <exclude reference="vOd-9W-PxP"/>
+                                <exclude reference="dBj-VF-U77"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Uo1-Zh-Yfa"/>
+                                <include reference="44R-X5-Dge"/>
+                                <include reference="y1J-h1-pmO"/>
+                                <include reference="7YL-FP-V5c"/>
+                                <include reference="xLJ-xO-AbO"/>
+                                <include reference="79S-d0-t9Q"/>
+                                <include reference="HRp-OL-b69"/>
+                                <include reference="8UG-pJ-SY2"/>
+                                <include reference="kcM-bV-9Pq"/>
+                                <include reference="bVF-Jx-WKG"/>
+                                <include reference="QnP-8Y-P4n"/>
+                                <include reference="kpY-PK-FJt"/>
+                                <include reference="gFm-aj-FwI"/>
+                                <include reference="FFG-IA-Oa7"/>
+                                <include reference="On2-dy-aae"/>
+                                <include reference="gD3-Kk-ax6"/>
+                                <include reference="dlI-GD-LeH"/>
+                                <include reference="Ko7-xQ-BWM"/>
+                                <include reference="QpE-cJ-trX"/>
+                                <include reference="vOd-9W-PxP"/>
+                                <include reference="dBj-VF-U77"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ByJ-4H-YXi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2383.5" y="-335.25"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="1Ao-Rg-hGh">
             <objects>
@@ -44,7 +355,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HSY-2w-7Fz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2310" y="-368.25"/>
+            <point key="canvasLocation" x="-1728" y="-384"/>
         </scene>
         <!--Activity View Controller-->
         <scene sceneID="Y1X-1w-x0O">
@@ -238,7 +549,7 @@
                     </view>
                     <connections>
                         <outlet property="table" destination="CnS-gF-bAe" id="83l-Lj-oOv"/>
-                        <segue destination="JFH-hJ-17Q" kind="show" identifier="destinationChosen" id="lBb-Zm-Q7a"/>
+                        <segue destination="gcM-4K-OXC" kind="show" identifier="destinationChosen" id="yxB-CK-wgm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HUX-CL-nxb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -495,7 +806,7 @@
                                                                         <rect key="frame" x="204.5" y="0.0" width="35.5" height="49"/>
                                                                     </variation>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Golden Gate Bridge" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7eb-NE-XLS">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Golden Gate Bridge" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7eb-NE-XLS">
                                                                     <rect key="frame" x="0.0" y="0.0" width="560" height="49"/>
                                                                     <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="20"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -651,7 +962,7 @@
                                                                 </mask>
                                                             </variation>
                                                         </imageView>
-                                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fg5-si-Yih" userLabel="line">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fg5-si-Yih" userLabel="line">
                                                             <rect key="frame" x="0.0" y="0.0" width="560" height="10"/>
                                                             <color key="backgroundColor" red="0.1529411765" green="0.44705882349999998" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
                                                             <constraints>
@@ -659,9 +970,6 @@
                                                                     <variation key="heightClass=regular-widthClass=compact" constant="17"/>
                                                                 </constraint>
                                                             </constraints>
-                                                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                                <rect key="frame" x="0.0" y="43" width="252" height="6"/>
-                                                            </variation>
                                                         </view>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.36470588240000001" green="0.29411764709999999" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -706,10 +1014,10 @@
                                                         <mask key="constraints">
                                                             <exclude reference="IYP-4r-szX"/>
                                                             <exclude reference="JfV-Z5-SLv"/>
-                                                            <exclude reference="6Y2-e4-qn6"/>
                                                             <exclude reference="41J-Ms-Vzy"/>
                                                             <exclude reference="AoZ-d5-LER"/>
                                                             <exclude reference="myo-DH-7yr"/>
+                                                            <exclude reference="6Y2-e4-qn6"/>
                                                         </mask>
                                                     </variation>
                                                     <variation key="heightClass=regular-widthClass=compact">
@@ -720,10 +1028,10 @@
                                                         <mask key="constraints">
                                                             <include reference="IYP-4r-szX"/>
                                                             <include reference="JfV-Z5-SLv"/>
-                                                            <include reference="6Y2-e4-qn6"/>
                                                             <include reference="41J-Ms-Vzy"/>
                                                             <include reference="AoZ-d5-LER"/>
                                                             <include reference="myo-DH-7yr"/>
+                                                            <include reference="6Y2-e4-qn6"/>
                                                         </mask>
                                                     </variation>
                                                 </view>
@@ -1139,13 +1447,13 @@ Presidio</string>
                                                     <exclude reference="T6N-5j-Mmd"/>
                                                 </mask>
                                                 <mask key="constraints">
+                                                    <exclude reference="eF1-wL-AwG"/>
                                                     <exclude reference="9Zy-l8-B4X"/>
-                                                    <exclude reference="dWK-6e-p8T"/>
-                                                    <exclude reference="Xhb-xN-mTM"/>
                                                     <exclude reference="Qgz-h2-daW"/>
                                                     <exclude reference="lyv-Te-M0B"/>
+                                                    <exclude reference="Xhb-xN-mTM"/>
                                                     <exclude reference="JNn-o5-0Am"/>
-                                                    <exclude reference="eF1-wL-AwG"/>
+                                                    <exclude reference="dWK-6e-p8T"/>
                                                 </mask>
                                             </variation>
                                             <variation key="heightClass=regular-widthClass=compact">
@@ -1154,13 +1462,13 @@ Presidio</string>
                                                     <include reference="T6N-5j-Mmd"/>
                                                 </mask>
                                                 <mask key="constraints">
+                                                    <include reference="eF1-wL-AwG"/>
                                                     <include reference="9Zy-l8-B4X"/>
-                                                    <include reference="dWK-6e-p8T"/>
-                                                    <include reference="Xhb-xN-mTM"/>
                                                     <include reference="Qgz-h2-daW"/>
                                                     <include reference="lyv-Te-M0B"/>
+                                                    <include reference="Xhb-xN-mTM"/>
                                                     <include reference="JNn-o5-0Am"/>
-                                                    <include reference="eF1-wL-AwG"/>
+                                                    <include reference="dWK-6e-p8T"/>
                                                 </mask>
                                             </variation>
                                         </view>
@@ -1262,6 +1570,9 @@ Presidio</string>
                             </view>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="PCF-Rp-y4s">
                                 <rect key="frame" x="18" y="530.5" width="378" height="31"/>
+                                <color key="minimumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="maximumTrackTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" red="0.1529411765" green="0.44705882349999998" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculating personality match for" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTl-sI-HoI">
                                 <rect key="frame" x="112" y="269" width="182" height="41"/>
@@ -1286,9 +1597,15 @@ Presidio</string>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="vZd-9f-Bew">
                                 <rect key="frame" x="18" y="474.5" width="378" height="32.5"/>
+                                <color key="minimumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="maximumTrackTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" red="0.1529411765" green="0.44705882349999998" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="2cd-MS-u6R">
                                 <rect key="frame" x="18" y="589" width="378" height="31"/>
+                                <color key="minimumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="maximumTrackTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" red="0.1529411765" green="0.44705882349999998" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agreeableness" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yc2-KU-DkU">
                                 <rect key="frame" x="33" y="560.5" width="113" height="20.5"/>
@@ -1298,6 +1615,9 @@ Presidio</string>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="pvF-D4-a5N">
                                 <rect key="frame" x="18" y="642.5" width="378" height="31"/>
+                                <color key="minimumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="maximumTrackTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" red="0.1529411765" green="0.44705882349999998" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neuroticism" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTJ-oc-nOH">
                                 <rect key="frame" x="33" y="614" width="92" height="20.5"/>
@@ -1312,7 +1632,7 @@ Presidio</string>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.93333333730000001" green="0.73333334920000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.17254901960784313" green="0.19607843137254902" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Yc2-KU-DkU" firstAttribute="leading" secondItem="H8z-sN-Syn" secondAttribute="leadingMargin" constant="13" id="2OR-52-LOp"/>
                             <constraint firstItem="bwL-v2-pcg" firstAttribute="centerY" secondItem="H8z-sN-Syn" secondAttribute="centerY" id="6Xl-qP-fP1"/>
@@ -1324,7 +1644,9 @@ Presidio</string>
                             <constraint firstItem="PCF-Rp-y4s" firstAttribute="top" secondItem="Z0u-ob-5lS" secondAttribute="bottom" constant="8" id="InD-ji-qZd"/>
                             <constraint firstItem="vZd-9f-Bew" firstAttribute="top" secondItem="BQN-zC-LNW" secondAttribute="bottom" constant="8" id="JpX-fs-AS9"/>
                             <constraint firstItem="PCF-Rp-y4s" firstAttribute="leading" secondItem="H8z-sN-Syn" secondAttribute="leadingMargin" id="KUO-tc-xrD"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="BQN-zC-LNW" secondAttribute="leading" id="Mja-t7-jTC"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="BQN-zC-LNW" secondAttribute="leading" id="Mja-t7-jTC">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-4"/>
+                            </constraint>
                             <constraint firstItem="bwL-v2-pcg" firstAttribute="centerX" secondItem="H8z-sN-Syn" secondAttribute="centerX" id="Rwz-zt-60R"/>
                             <constraint firstItem="Yc2-KU-DkU" firstAttribute="top" secondItem="PCF-Rp-y4s" secondAttribute="bottom" id="WYB-em-0en"/>
                             <constraint firstItem="nTl-sI-HoI" firstAttribute="top" secondItem="bwL-v2-pcg" secondAttribute="bottom" constant="-124" id="Y3f-Uk-3io"/>
@@ -1359,8 +1681,14 @@ Presidio</string>
         </scene>
     </scenes>
     <resources>
-        <image name="Activities" width="50" height="26"/>
+        <image name="Activities" width="31" height="30"/>
+        <image name="Activity" width="65" height="65"/>
+        <image name="CalendarIcon" width="60" height="63"/>
+        <image name="Group 32" width="1084" height="343"/>
+        <image name="HotelIcon" width="71" height="45"/>
         <image name="ICON" width="784" height="42"/>
+        <image name="Plane" width="81" height="28"/>
+        <image name="Rectangle 188" width="185" height="122"/>
         <image name="San Francisco" width="847" height="567"/>
         <image name="Second Bar" width="1081" height="130"/>
         <image name="Shade" width="961" height="147"/>
