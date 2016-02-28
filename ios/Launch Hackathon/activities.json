@@ -1,111 +1,350 @@
 {
   "hotel": {
-    "HotelID": "2443731",
-    "Name": "Rosewood Sand Hill",
+    "HotelID": "19712",
+    "Name": "The Mark",
     "Location": {
-      "StreetAddress": "2825 Sand Hill Road",
-      "City": "Menlo Park",
-      "Province": "CA",
+      "StreetAddress": "Madison Ave at 77th Street",
+      "City": "New York",
+      "Province": "NY",
       "Country": "USA",
       "GeoLocation": {
-        "Latitude": "37.42113",
-        "Longitude": "-122.21455"
+        "Latitude": "40.775147",
+        "Longitude": "-73.963432"
       }
     },
-    "Description": "Situated in Menlo Park, this luxury hotel is 1 mi (1.7 km) from SLAC National Accelerator Laboratory and within 3 mi (5 km) of Stanford University and Stanford Shopping Center. Horse Park at Woodside and Stanford University Medical Center are also within 3 mi (5 km). ",
-    "DetailsUrl": "http://www.expedia.com/go/hotel/info/2443731/0/0?tpid=1&eapid=0&langid=1033",
+    "Description": "This 16-story hotel is in Manhattan's Upper East Side, close to the Metropolitan Museum of Art, The Whitney Museum, and Central Park. With Madison Avenue less than a block away, The Mark places you in the center of Manhattan's social and cultural scene.",
+    "DetailsUrl": "http://www.expedia.com/go/hotel/info/19712/0/0?tpid=1&eapid=0&langid=1033",
     "StarRating": "5.0",
-    "ThumbnailUrl": "https://images.trvl-media.com/hotels/3000000/2450000/2443800/2443731/2443731_30_t.jpg",
-    "GuestRating": "4.7",
-    "GuestReviewCount": "60",
+    "ThumbnailUrl": "https://images.trvl-media.com/hotels/1000000/20000/19800/19712/19712_198_t.jpg",
+    "GuestRating": "4.8",
+    "GuestReviewCount": "244",
     "AmenityList": {
-      "Amenity": [
-                  "High-speed Internet",
-                  "Swimming pool"
-                  ]
+      "Amenity": "High-speed Internet"
     },
-    "link": "expda://hotelSearch?hotelId=2443731"
+    "link": "expda://hotelSearch?hotelId=19712",
+    "price": "213.87"
   },
   "flight": {
     "FlightPriceSummary": {
       "CurrencyCode": "USD",
-      "TotalPrice": 319.35
+      "TotalPrice": 336.62
     },
     "FlightItinerarySummary": {
       "OutboundDepartureAirlineCode": "DL",
-      "OutboundDepartureAirportCode": "SFO",
-      "OutboundDepartureTime": "2016-03-01T06:15:00.000-08:00",
-      "OutboundStopCount": 1,
+      "OutboundDepartureAirportCode": "OAK",
+      "OutboundDepartureTime": "2016-03-01T06:05:00.000-08:00",
+      "OutboundStopCount": 2,
       "InboundDepartureAirlineCode": "DL",
       "InboundDepartureAirportCode": "JFK",
-      "InboundDepartureTime": "2016-03-08T11:40:00.000-05:00",
-      "InboundStopCount": 1
+      "InboundDepartureTime": "2016-03-05T15:30:00.000-05:00",
+      "InboundStopCount": 2
     },
-    "Timestamp": "2016-02-27T16:47:03.635Z",
+    "Timestamp": "2016-02-28T01:27:15.118Z",
     "AirProductToken": [
-                        "AQogCh4IxJgBEgQxMjU1GLJxIKlRKJe-RTDgwEU4VkAAWAEKHwodCMSYARIDNDMwGKlRILJxKIiORjCZkUY4VkAAWAESBggJEAIYAhgBIgQIARABKAQoAygBKAcwAQ"
-                        ]
+                        "AQo_Ch4IxJgBEgQxNDA4GI5QIPISKI2-RTD7vkU4VkAAWAEKHQjEmAESAzQ0NBjyEiCpUSiMwEUwnMJFOFZAAFgBCkEKHgjEmAESAzQxORipUSCLuAEoju5FMJjxRThWQABYAQofCMSYARIENTg1MBiLuAEgjlAooPJFMPjyRThWQABYARIGCAkQAhgCGAEiBAgBEAEoBCgDKAEoBzAC"
+                        ],
+    "airline": "Spirit Airlines"
   },
   "activities": [
                  {
-                 "name": "Alcatraz Package: Hop-On Hop-Off Cruise & City Tour",
-                 "distanceFromHotel": 0.7,
-                 "address": "37.8269775,-122.4229555",
-                 "price": "$135",
-                 "match": 85,
-                 "rating": 0,
-                 "ratingName": "Nigel Wisoky",
-                 "ratingDescription": "I love Alcatraz Package: Hop-On Hop-Off Cruise & City Tour. It is an amazing place!",
-                 "descriptionLong": "See the wonders of the city on this hop-on hop-off tour, including Golden Gate Park, Pier 39, and Union Square, and then venture offshore, cruising past the notorious former federal prison on Alcatraz Island.\nTour San Francisco and admire all that this diverse city has to offer from your double-decker bus. Marvel at 360-degree views of the city and take unlimited rides for the duration of your ticket. By day, hop on and off at iconic sites including Pier 39, Golden Gate Park, and Union Square to explore as you wish. By night, watch the city glisten and glow on the Night Tour's scenic route.\nWith your ticket, embark on a cruise and glide by Alcatraz, also known as &quot;The Rock.&quot; This tiny island is home to an abandoned jailhouse and the oldest operating lighthouse on the West Coast.\nBack in the city, make the most of your ticket and take walking tours through North Beach, Chinatown, and the infamous Barbary Coast neighborhoods. Visit the charming bayside town of Sausalito, where distinctive boutiques, an array of restaurants and cafes, and art galleries await you. Afterwards, complete your tour with an hour-long bicycle rental to explore at your own pace.",
-                 "bookWebsite": "http://www.expedia.com/activities/192704"
+                 "id": "267763",
+                 "img": "http://a.travel-assets.com/mediavault.le/media/efd2cf945e08c57b1c5e5303a748220afa73090f.jpeg",
+                 "name": "TCM Classic Film Tour",
+                 "distanceFromHotel": 2.5,
+                 "latLng": "40.7686973,-73.9918181",
+                 "address": "Clinton Towers, W 54th St, New York, NY 10019, USA",
+                 "price": "$43",
+                 "match": 0.8468579604950885,
+                 "rating": 3.93,
+                 "ratingName": "Rosendo Jast",
+                 "ratingDescription": "I love TCM Classic Film Tour. It is an amazing place!",
+                 "descriptionLong": "Get a behind-the-scenes look at spots from some of your favorite movies set in the Big Apple. Your guide entertains, informs, and asks trivia questions while showcasing more than 60 filming locations. Discover why New York City is the most filmed city in the world.\nAboard a comfortable sightseeing bus, venture through neighborhoods rich with history and stunning architecture where some of the most iconic movies of all time were made. As you approach the Upper West Side, see Columbus Circle and Lincoln Center. Hop off at Zabar's, the well-known market seen in You've Got Mail, and the famed Dakota Building, featured in films like Hannah and Her Sisters and Rosemary's Baby.\nAs you cross through Central Park, learn about dozens of movies set here including the very first motion picture made in New York City. Continue through the Upper East Side and stop for a photo in front of Holly Golighty's apartment from Breakfast at Tiffany's. Explore areas like Sutton Place with a fantastic view of the Queensboro Bridge, recognizable from Woody Allen's Manhattan, and see the subway grate where Marilyn Monroe's skirt flew up in The Seven Year Itch.\nThen head down Fifth Avenue and pass the Plaza Hotel, FAO Schwartz, Tiffany's, Rockefeller Center, and the Empire State Building—all featured in countless flicks. As your tour comes to a close at the famous Grand Central Terminal, seen in North by Northwest, you may leave surprised by how much—and in some ways how little—Manhattan has changed.",
+                 "bookWebsite": "http://www.expedia.com/activities/267763",
+                 "ratings": {
+                 "Openness": 0.9709001151039938,
+                 "Conscientiousness": 0.8019283943646017,
+                 "Extraversion": 0.5098350116779743,
+                 "Agreeableness": 0.5516432562436079,
+                 "Neuroticism": 0.014145239732314607
+                 },
+                 "matchRatings": {
+                 "Openness": 0.22895861507910076,
+                 "Conscientiousness": 0.8877592243347234,
+                 "Extraversion": 0.9847377739304504,
+                 "Agreeableness": 0.9308334124483815,
+                 "Neuroticism": 0.7756219224592487
+                 },
+                 "description": "Get a behind-the-scenes look at spots from some of your favorite movies set in the Big Apple. Your guide entertains, informs, and asks trivia questions while showcasing more than 60 filming locations. Discover why New York City is the most filmed city in the world."
                  },
                  {
-                 "name": "Alcatraz Cruise & Hop-On Hop-Off Tour",
-                 "distanceFromHotel": 0.7,
-                 "address": "37.7749295,-122.4194155",
-                 "price": "$110",
-                 "match": 85,
-                 "rating": 3.85,
-                 "ratingName": "Tyrique Stehr",
-                 "ratingDescription": "I love Alcatraz Cruise & Hop-On Hop-Off Tour. It is an amazing place!",
-                 "descriptionLong": "Enjoy 72 hours of unlimited rides on all 4 of San Francisco's open-top double-decker bus tours, and explore the city at your own pace as you hop on and off. Top off your tour on land with a cruise out to the island prison of Alcatraz.\nHop on any of the double-decker bus routes to check out the landmarks of your choice in the City by the Bay. The Downtown Tour takes you by Fisherman's Wharf, Union Square and along the waterfront. The Golden Gate Bridge and Sausalito Tour passes through the Marina District and across the Golden Gate Bridge to the bayside town of Sausalito.\nThe Golden Gate Park and Beach Tour winds through the city's largest park by gardens and museums such as the De Young Museum and the California Academy of Sciences.The Night Tour sets out for an evening look at San Francisco’s sights and city lights.\nOnce you cover enough ground in the city, sail across the bay to America's most notorious prison for a self-guided audio tour of &quot;The Rock&quot;.\nDowntown Tour stops include:\n\nFisherman's Wharf\nUnion Square\nChinatown\nNorth Beach\nEmbarcadero\n\nGolden Gate and Sausalito Tour stops include:\n\nGolden Gate Bridge\nPalace of Fine Arts\nVista Point\nSausalito\nPresidio\nGhirardelli Square\n\nGolden Gate Park and Beach Tour stops include:\n\nSt Mary's Cathedral\nHaight-Ashbury District\nCalifornia Academy of Sciences\nGolden Gate Park\nCivic Center\n\nNight Tour stops include:\n\nFinancial District\nBay Bridge\nAlamo Square\nChinatown\nUnion Square\n\nUpgrade your experience to the Freestyle City Explorer package and explore the natural beauty of the Bay Area, visit a top local attraction, or continue your tour by boat, bike, or GPS GoCar with your choice of 3 additional activities or tours.\nAdmission to 3 of the below attractions:\n\nCalifornia Academy of Sciences\nSan Francisco Bay Cruise\nRipley's Believe It or Not\nMuir Woods and Sausalito Tour\nAquarium by the Bay\n3-hour bike rental\nRocket Boat\nAngel Island Ferry\nSausalito or Tiburon Ferry\n$25 Restaurant Gift Card\n60-minute GPS-guided GoCar tour\nMadame Tussaud’s Wax Museum\nSan Francisco Dungeon\nExploratorium\nDe Young Museum\nLegion of Honor\n",
-                 "bookWebsite": "http://www.expedia.com/activities/219680"
+                 "id": "183909",
+                 "img": "http://a.travel-assets.com/mediavault.le/media/a619a13a0c6972bc820e3d4e01fb1a27d496f9c0.jpeg",
+                 "name": "All Around Town Double-Decker Sightseeing Bus Tour",
+                 "distanceFromHotel": 2.71,
+                 "latLng": "40.7540388,-73.979412",
+                 "address": "Fifth Church of Christ, New York, NY 10173, USA",
+                 "price": "$54",
+                 "match": 0.8447873602816465,
+                 "rating": 3.69,
+                 "ratingName": "Damon Wiegand",
+                 "ratingDescription": "I love All Around Town Double-Decker Sightseeing Bus Tour. It is an amazing place!",
+                 "descriptionLong": "Dine, shop, and soak up the action-packed bustle New York City via a comfortable and convenient double-decker bus. Enjoy the freedom of hopping on and off to visit the sites and neighborhoods that interest you most on a 2- or 3-day exploration of The City That Never Sleeps.\nGrab a seat on the bus and tour through exciting, eclectic neighborhoods like Times Square, Chinatown, and Greenwich Village. As you listen to your knowledgeable guide chatter away or tune into informative pre-recorded commentary, take in the sights and sounds of the city. As you pull up to major attractions, climb off the bus and to tour historic landmarks, museums, and iconic buildings at your leisure.\nThis pass grants you access to all of the sightseeing loops, plus a 1-hour bike rental to pedal around Central Park or the Brooklyn Bridge. Plus you receive an Eat and Play Card packed with discounts at great NYC retailers, restaurants, theaters, and attractions. Each card is valid for up to 4 people and can be used again and again for the entire duration of your NYC stay.\nDowntown Loop stops include:\n\nGreenwich Village\nTimes Square\nEmpire State Building\nSoho\nLittle Italy\n\nUptown Loop stops include:\n\nCentral Park West\nAmerican Museum of Natural History\nApollo Theater\nMuseum Mile\nFifth Avenue\n\nBronx Loop stops include:\n\nYankee Stadium\n\nBrooklyn Loop stops include:\n\nBotanical Garden\nBrooklyn Museum of Art\nFulton Mall\nCadman Plaza\nBrooklyn Public Library\n\nNight Tour stops include:\n\nEmpire State Building\nGreenwich Village\nChinatown\nRockefeller Center\nManhattan Bridge\n",
+                 "bookWebsite": "http://www.expedia.com/activities/183909",
+                 "ratings": {
+                 "Openness": 0.9558366057764858,
+                 "Conscientiousness": 0.8842418767444211,
+                 "Extraversion": 0.5486640724005907,
+                 "Agreeableness": 0.5074776866186564,
+                 "Neuroticism": 0.009860872733342262
+                 },
+                 "matchRatings": {
+                 "Openness": 0.24402212440660875,
+                 "Conscientiousness": 0.805445741954904,
+                 "Extraversion": 0.9764331653469333,
+                 "Agreeableness": 0.9749989820733329,
+                 "Neuroticism": 0.7713375554602763
+                 },
+                 "description": "Dine, shop, and soak up the action-packed bustle New York City via a comfortable and convenient double-decker bus. Enjoy the freedom of hopping on and off to visit the sites and neighborhoods that interest you most on a 2- or 3-day exploration of The City That Never Sleeps."
                  },
                  {
-                 "name": "Golden Gate Bay Cruise",
-                 "distanceFromHotel": 0.7,
-                 "address": "37.8059887,-122.4099154",
-                 "price": "$30",
-                 "match": 85,
-                 "rating": 3.65,
-                 "ratingName": "Arvilla Bechtelar",
-                 "ratingDescription": "I love Golden Gate Bay Cruise. It is an amazing place!",
-                 "descriptionLong": "Get a look at San Francisco’s breathtaking skyline, waterfront, and wildlife from the water as you cruise under the majestic Golden Gate Bridge and circle notorious Alcatraz Island.\nSet sail from historic Fisherman's Wharf and enjoy breathtaking views of the City by the Bay. Pass by the lively seafood restaurants and parks of North Beach and the beach and bathhouse of the Aquatic Park Historic District. Check out the red-roofed barracks and buildings of Fort Mason and the pastel-colored homes of the waterfront Marina Districts as you approach the massive 4,200-foot (1,280 m) span of the Golden Gate Bridge. Keep your camera handy—you cruise right underneath this iconic and impressive city symbol.\nAs you make your way across the bay, the colorful history of the city is revealed through award-winning narration from a personal, wireless headset. Be on the lookout for aquatic wildlife including seagulls, pelicans, and sea lions. You may even be lucky enough to spot a harbor porpoise or whale.\nAdmire the rugged beauty of the Marin Headlands wildlife reserves and the waterfront charm of picturesque Sausalito. Slowly circle Alcatraz Island, once the involuntary residence of the nation’s most infamous criminals, including Al Capone and George &quot;Machine Gun&quot; Kelly, and see the San Francisco-Oakland Bay Bridge in the distance as you make your way back to the pier to disembark.",
-                 "bookWebsite": "http://www.expedia.com/activities/219796"
+                 "id": "185654",
+                 "img": "http://a.travel-assets.com/mediavault.le/media/e9ca7f8166ffedfad73594c50c555fbd117a9d84.jpeg",
+                 "name": "Chicago the Musical on Broadway",
+                 "distanceFromHotel": 2.39,
+                 "latLng": "40.7612489,-73.9850761",
+                 "address": "219 W 49th St, New York, NY 10019, USA",
+                 "price": "$117",
+                 "match": 0.8193290072358235,
+                 "rating": 4.42,
+                 "ratingName": "Nico Ryan",
+                 "ratingDescription": "I love Chicago the Musical on Broadway. It is an amazing place!",
+                 "descriptionLong": "Watch as a world of greed, seductive murderesses, and all that jazz unfolds before your eyes during a rousing performance of Chicago. The winner of 6 Tony Awards® and the longest-running musical revival in Broadway history, this razzle-dazzle spectacle is sure to sweep you off your seat.\nThis classic tale of fame and fortune is set in 1920s Chicago, “where the gin is cold but the piano’s hot.” Tensions run high as Roxie Hart and Velma Kelly, 2 young and beautiful vaudeville performers, vie for the spotlight and the attention of the adoring public—all from behind bars.\nThe show opens with a riveting musical introduction by Velma—an infamous stage star locked up for murdering her sister and philandering husband—as she becomes the belle of the prison ball. But her fame quickly fizzles as the media catches wind of Roxie’s equally enticing arrest after the untimely death of her lover. Unsavory characters like corrupt prison matron &quot;Mama&quot; Morton and lawyer Billy Flynn add to the drama.\nBright lights, show-stopping songs, and toe-tapping dance numbers take the stage as the 2 starlets duke it out for coveted space on the front page headlines. With Tony Awards® for Best Revival of a Musical and Best Choreography and a Grammy Award for the Best Musical Theater Album, this is one unforgettable journey into Chicago’s sultry, storied past.",
+                 "bookWebsite": "http://www.expedia.com/activities/185654",
+                 "ratings": {
+                 "Openness": 1,
+                 "Conscientiousness": 0.9740086606996222,
+                 "Extraversion": 0.48604605413589,
+                 "Agreeableness": 0.42875747547426635,
+                 "Neuroticism": 0.009221069801775433
+                 },
+                 "matchRatings": {
+                 "Openness": 0.19985873018309452,
+                 "Conscientiousness": 0.7156789579997029,
+                 "Extraversion": 0.9609488163883662,
+                 "Agreeableness": 0.946280806782277,
+                 "Neuroticism": 0.7706977525287094
+                 },
+                 "description": "Watch as a world of greed, seductive murderesses, and all that jazz unfolds before your eyes during a rousing performance of Chicago. The winner of 6 Tony Awards® and the longest-running musical revival in Broadway history, this razzle-dazzle spectacle is sure to sweep you off your seat."
                  },
                  {
-                 "name": "Escape From The Rock Cruise",
-                 "distanceFromHotel": 0.7,
-                 "address": "37.8269775,-122.4229555",
-                 "price": "$36",
-                 "match": 85,
-                 "rating": 3.9,
-                 "ratingName": "Dexter Gottlieb",
-                 "ratingDescription": "I love Escape From The Rock Cruise. It is an amazing place!",
-                 "descriptionLong": "Get an up-close look at the foreboding island penitentiary of Alcatraz from the waters of the San Francisco Bay. See the borders of this fearsome former prison from every angle and listen to engaging audio commentary about the island’s infamous inmates as you cruise around its formidable shores.\nStep aboard a comfortable sightseeing boat at Fisherman’s Wharf and set off across the waves of the bay. Take in views of the city skyline and waterfront of the Marina District as you approach the iconic span of the Golden Gate Bridge, and snap a photo from the deck as you pass directly underneath it.\nConnect to engaging audio-commentary on your smartphone or tablet, and turn your gaze toward Alcatraz’s rocky shores as the boat loops back through the bay toward this ominous outpost. Study the prison’s grounds, fences, and cell block buildings from the water, listening to stories about escape attempts by notorious former prisoners like Al Capone, Clyde Johnson, and Billy Cook the Killer before heading back to shore.",
-                 "bookWebsite": "http://www.expedia.com/activities/285579"
+                 "id": "301520",
+                 "img": "http://a.travel-assets.com/mediavault.le/media/5d25fceaa400515e3c529cbdbb735e868a53d905.jpeg",
+                 "name": "New York Beer & Brewery Tour",
+                 "distanceFromHotel": 4.32,
+                 "latLng": "40.7388319,-73.9815337",
+                 "address": "222 E 24th St, New York, NY 10010, USA",
+                 "price": "$115",
+                 "match": 0.8171985202626217,
+                 "rating": 3.92,
+                 "ratingName": "Emily Bashirian",
+                 "ratingDescription": "I love New York Beer & Brewery Tour. It is an amazing place!",
+                 "descriptionLong": "Sip your way through New York’s craft beer scene on this expert-led tour of the best brews from Midtown to Brooklyn. Raise a toast in a beer garden in Queens, sample Belgian brews in a Williamsburg speakeasy, and whet your whistle on a Manhattan rooftop on this beer-centric excursion.\nMeet your guide at Birreria, the cool rooftop brewery on top of Eataly in the Flatiron District. Kick off your drinking adventure with a tasting of authentic cask ales while looking out over Madison Square Park. From there, hop on a comfortable bus and make your way toward Brooklyn. This hipster haven is a hotbed of micro-breweries, and you can get a glimpse of its beer-making past with a stop to check out the remnants of the old Brewers’ Row.\nGrab a seat at the Brooklyn Brewery and enjoy a cold pint as your guide shares colorful stories from the lager-producer’s past. Head to Spuyten Duyvil, a tucked-away speakeasy in trendy Williamsburg, for a sampling of rare craft beers from around the globe paired with artisan meats and cheeses.\nSoak up some of the suds with a freshly baked pretzel, and then continue on to your final stop—Bohemian Hall in Astoria, Queens. This jovial beer garden was established more than a century ago, and is the perfect place to down some tasty Czech beer and snacks in a friendly, tree-shaded outdoor area or a cozy nook of the inviting bar before your ride back to Manhattan.",
+                 "bookWebsite": "http://www.expedia.com/activities/301520",
+                 "ratings": {
+                 "Openness": 1,
+                 "Conscientiousness": 0.9897276790437,
+                 "Extraversion": 0.5089478797604281,
+                 "Agreeableness": 0.38271230389206623,
+                 "Neuroticism": 0.0066696644409295035
+                 },
+                 "matchRatings": {
+                 "Openness": 0.19985873018309452,
+                 "Conscientiousness": 0.6999599396556252,
+                 "Extraversion": 0.9838506420129042,
+                 "Agreeableness": 0.9002356352000769,
+                 "Neuroticism": 0.7681463471678636
+                 },
+                 "description": "Sip your way through New York’s craft beer scene on this expert-led tour of the best brews from Midtown to Brooklyn. Raise a toast in a beer garden in Queens, sample Belgian brews in a Williamsburg speakeasy, and whet your whistle on a Manhattan rooftop on this beer-centric excursion."
                  },
                  {
-                 "name": "Yosemite National Park Day Tour",
-                 "distanceFromHotel": 0.7,
-                 "address": "37.7452032,-119.598221",
-                 "price": "$149",
-                 "match": 85,
-                 "rating": 2.75,
-                 "ratingName": "Alejandra Terry",
-                 "ratingDescription": "I love Yosemite National Park Day Tour. It is an amazing place!",
-                 "descriptionLong": "Wander down winding trails laden with pine needles, gaze at torrents of cascading water falling from granite cliffs, and explore open meadows flanked by towering rock formations. Ride to Yosemite National Park and spend a day uncovering the stunning corners of this magical landscape.\nHop aboard convenient transportation from your hotel and cruise north, crossing over the Golden Gate Bridge and riding through rolling hills until you arrive at the gates of Yosemite. Disembark and follow your guide for a pleasant walk down scenic hiking trails. As you stroll, listening to fascinating commentary about the natural history of this 1,190-square-mile (3,082-sq-km) wonderland.\nLook for rainbows in the mist of Bridalveil Falls, watch fearless climbers scale the rocky face of El Capitan and Half Dome, or simply sit and relax next to the swift currents of the Merced River. When you're ready for a break, make your way to Yosemite Village to check out intriguing galleries, do some souvenir shopping, or consider grabbing lunch with options ranging from quick-and-easy cafes to fine dining at the Ahwahnee Hotel.\nNo matter how you spend your time at Yosemite, you're sure to be met with incredible views, breathtaking landscapes, and countless photo opportunities before you meet back up with your ride and return to San Francisco.",
-                 "bookWebsite": "http://www.expedia.com/activities/304202"
+                 "id": "336406",
+                 "img": "http://a.travel-assets.com/mediavault.le/media/3e0cb87d6f1033364d421cd4d659057f2bdee5c8.jpeg",
+                 "name": "Skiing at Stratton Mountain with 2-Night Stay & 2-Day Lift Ticket",
+                 "distanceFromHotel": 279.36,
+                 "latLng": "43.165323,-72.9224329",
+                 "address": "24 Old Town Rd, Bondville, VT 05340, USA",
+                 "price": "$449",
+                 "match": 0.8110844378505341,
+                 "rating": 4.8,
+                 "ratingName": "Holden Kautzer",
+                 "ratingDescription": "I love Skiing at Stratton Mountain with 2-Night Stay & 2-Day Lift Ticket. It is an amazing place!",
+                 "descriptionLong": "Escape for a weekend to Stratton, renowned for pristine snow, varied terrain, and excellent grooming. Your weekend on the mountain includes 2 full-day lift tickets, a 2-night stay at a full-service resort, and is complete with access to a world-class recreation center with gym, pool, and sauna.\nKick back and relax in a comfortable coach as you are transported from the hustle and bustle of Manhattan to scenic Stratton, Vermont, often referred to as the “Vail of the East.” Once you arrive on Friday evening you feast on a hearty dinner. Then turn in for a good night’s sleep, as Saturday and Sunday are reserved for skiing or snowboarding. Sunday Morning, drop your bags off at the coach before hitting the slopes for your second day of skiing down paths of varying difficulty.\nOr, if you are looking for a break from skiing or snowboarding, exchange your ticket and go snowshoeing, cross-country skiing, snow-tubing, or just hit up Stratton Resort’s world-class recreation center complete with gym, pool, and sauna. If you're a beginner you have the option of exchanging your 2 lift tickets for group lessons and rentals.",
+                 "bookWebsite": "http://www.expedia.com/activities/336406",
+                 "ratings": {
+                 "Openness": 0.9564069507080115,
+                 "Conscientiousness": 0.9712635123225564,
+                 "Extraversion": 0.4547904086542203,
+                 "Agreeableness": 0.537219140820732,
+                 "Neuroticism": 0.008363693915159908
+                 },
+                 "matchRatings": {
+                 "Openness": 0.243451779475083,
+                 "Conscientiousness": 0.7184241063767688,
+                 "Extraversion": 0.9296931709066965,
+                 "Agreeableness": 0.9452575278712574,
+                 "Neuroticism": 0.7698403766420939
+                 },
+                 "description": "Escape for a weekend to Stratton, renowned for pristine snow, varied terrain, and excellent grooming. Your weekend on the mountain includes 2 full-day lift tickets, a 2-night stay at a full-service resort, and is complete with access to a world-class recreation center with gym, pool, and sauna."
+                 },
+                 {
+                 "id": "278287",
+                 "img": "http://a.travel-assets.com/mediavault.le/media/af7812e09b9f2c08d121e32f86013f5bca1cd13b.jpeg",
+                 "name": "Smartphone-Guided Central Park Scavenger Hunt",
+                 "distanceFromHotel": 1.01,
+                 "latLng": "40.7711329,-73.9741874",
+                 "address": "Frisbee Hill, New York, NY 10019, USA",
+                 "price": "$15",
+                 "match": 0.8095997462334369,
+                 "rating": 4.64,
+                 "ratingName": "Rosemary Okuneva",
+                 "ratingDescription": "I love Smartphone-Guided Central Park Scavenger Hunt. It is an amazing place!",
+                 "descriptionLong": "Embark on an interactive tour of Central Park and explore part of the city while following hints and completing unique challenges. See landmarks and historical sites including Columbus Circle, Wollman Ice Rink, and the Central Park Zoo while you solve clues that lead you on a memorable tour of the urban jungle.\nWelcome to New York's Central Park, where the hustle and bustle of the concrete jungle dissolves into an urban green space filled with beautiful lawns and hidden attractions that tell the rich history of the city. Begin your amazing scavenger hunt adventure in Columbus Circle and travel along the tree-lined paths to the southern end of this great preserve. Using your smartphone, tablet, or other mobile device, follow tricky clues and solve engaging and informative puzzles along the way.\nMake your way to the Central Park Mall and the beautiful terrace at Bethesda Fountain. Pass by park attractions like the Wollman Ice Rink and the Central Park Zoo, and wind your way between statues, ponds, and gardens to Belvedere Castle.\nComplete challenges, follow hints, and earn points as you meander through the park, exploring in style and making memories along the way. You can work through the clues and tour as a team, or split into groups to compete for the highest score as you race your way to the finish line at the southern end of Central Park. Follow directions as you make your way around the the park, world-famous for its history and landmarks, and perhaps learn something new as your adventure wraps up.",
+                 "bookWebsite": "http://www.expedia.com/activities/278287",
+                 "ratings": {
+                 "Openness": 0.9761609577548406,
+                 "Conscientiousness": 0.9802063686203788,
+                 "Extraversion": 0.5977209628165573,
+                 "Agreeableness": 0.5254353629250412,
+                 "Neuroticism": 0.008138681557768425
+                 },
+                 "matchRatings": {
+                 "Openness": 0.22369777242825406,
+                 "Conscientiousness": 0.7094812500789464,
+                 "Extraversion": 0.9273762749309666,
+                 "Agreeableness": 0.9570413057669482,
+                 "Neuroticism": 0.7696153642847025
+                 },
+                 "description": "Embark on an interactive tour of Central Park and explore part of the city while following hints and completing unique challenges. See landmarks and historical sites including Columbus Circle, Wollman Ice Rink, and the Central Park Zoo while you solve clues that lead you on a memorable tour of the urban jungle."
+                 },
+                 {
+                 "id": "185464",
+                 "img": "http://a.travel-assets.com/mediavault.le/media/1b64bb657adb9b5c513f55fa7b0b16706689fbd4.jpeg",
+                 "name": "Aladdin on Broadway",
+                 "distanceFromHotel": 2.96,
+                 "latLng": "40.7561111,-73.9879339",
+                 "address": "214 W 42nd St, New York, NY 10036, USA",
+                 "price": "$70",
+                 "match": 0.8087966059105448,
+                 "rating": 4.43,
+                 "ratingName": "Robin Murazik",
+                 "ratingDescription": "I love Aladdin on Broadway. It is an amazing place!",
+                 "descriptionLong": "An evil vizier, a comical genie, and a love story for the ages— Aladdin is everything you loved about the Disney movie and more. With the songs you know by heart plus new tunes penned by Oscar-winning composers, this musical magic carpet ride is infectiously fun and destined to be a classic.\nThe curtain comes up on the bustle and hubbub of Agrabah, where street-smart commoner Aladdin is keeping “One Jump Ahead” as he navigates the bazaar. Power-hungry Jafar—advisor to the bumbling Sultan—seeks out this harem pant-wearing urchin to steal a golden lamp from the mystical Cave of Wonders.\nThings go a bit sideways in the cave, and a razzle dazzle extravaganza of sequined dance numbers, jewel-hued costumes, and enchanting storytelling results. Genie—who spouts off a tongue-twisting rendition of “Friend Like Me” with downright magical aplomb—turns our hero from Aladdin into Prince Ali, helping him woo the beautiful princess Jasmine with a romantic ride on a flying carpet.\nFavorite songs by Oscar-winning composers Alan Menken, Howard Ashman, and Tim Rice are given new life onstage, and it’s impossible not to be carried away by a score that includes “A Whole New World,” “Arabian Nights,” and “Prince Ali.” Hilarious and heartwarming, colorful and energetic, this rags-to-riches spectacle is an adventure the whole family can enjoy.",
+                 "bookWebsite": "http://www.expedia.com/activities/185464",
+                 "ratings": {
+                 "Openness": 0.9888228711767167,
+                 "Conscientiousness": 0.9795457897350521,
+                 "Extraversion": 0.6141748947173591,
+                 "Agreeableness": 0.4737017015014881,
+                 "Neuroticism": 0.008847783970635924
+                 },
+                 "matchRatings": {
+                 "Openness": 0.2110358590063779,
+                 "Conscientiousness": 0.710141828964273,
+                 "Extraversion": 0.9109223430301648,
+                 "Agreeableness": 0.9912250328094987,
+                 "Neuroticism": 0.7703244666975699
+                 },
+                 "description": "An evil vizier, a comical genie, and a love story for the ages— Aladdin is everything you loved about the Disney movie and more. With the songs you know by heart plus new tunes penned by Oscar-winning composers, this musical magic carpet ride is infectiously fun and destined to be a classic."
+                 },
+                 {
+                 "id": "249206",
+                 "img": "http://a.travel-assets.com/mediavault.le/media/51933483a05e559de22ed4e386967f613a01a471.jpeg",
+                 "name": "Statue of Liberty, Ellis Island & 9/11 Memorial & Museum",
+                 "distanceFromHotel": 8.7,
+                 "latLng": "40.7084274,-74.0173484",
+                 "address": "21 South End Ave, New York, NY 10280, USA",
+                 "price": "$115",
+                 "match": 0.8038707845457278,
+                 "rating": 4.48,
+                 "ratingName": "Macie Padberg",
+                 "ratingDescription": "I love Statue of Liberty, Ellis Island & 9/11 Memorial & Museum. It is an amazing place!",
+                 "descriptionLong": "Visit 3 of Lower Manhattan's most symbolic sites on this full-day tour. An expert guide offers insightful commentary on the Statue of Liberty, Ellis Island, and the 9/11 Memorial while also leaving you plenty of freedom to explore at your own pace.\nMeet your guide at Battery Park, the southernmost tip of Manhattan, and enjoy priority boarding for an early boat across the water to Liberty Island. Gaze up at the Statue of Liberty, and listen as your guide shares the history behind this towering American icon before heading into the statue's pedestal for an even closer look.\nLeave Lady Liberty behind and ferry across to Ellis Island to discover what 12 million immigrants experienced as they entered the United States for the first time. Step into the Great Hall, and learn about the so-called Stairs of Separation as you walk down the steps where the fates of so many families changed course. Spend as much time as you like exploring the exhibits, or ferry right back to Battery Park to grab lunch at your leisure before the afternoon portion of your tour.\nReconvene at St. Paul's Chapel, where New Yorkers gathered on September 11, 2001 to await news of loved ones and where volunteer workers rested in the weeks following the attacks. Pass by the Winter Garden and the Eleven Tears Memorial before making your way to the 9/11 Memorial itself.\nGaze down into the deep reflecting pools, where water cascades peacefully in the footprints left by the fallen Twin Towers. Your guide leads you to poignant tributes like the Fireman's Memorial before leaving you to walk through the stirring 9/11 Memorial Museum on your own.",
+                 "bookWebsite": "http://www.expedia.com/activities/249206",
+                 "ratings": {
+                 "Openness": 0.9771656902666287,
+                 "Conscientiousness": 0.9750413992897207,
+                 "Extraversion": 0.4365752405024346,
+                 "Agreeableness": 0.44112870508082946,
+                 "Neuroticism": 0.007599568440008252
+                 },
+                 "matchRatings": {
+                 "Openness": 0.22269303991646594,
+                 "Conscientiousness": 0.7146462194096045,
+                 "Extraversion": 0.9114780027549108,
+                 "Agreeableness": 0.95865203638884,
+                 "Neuroticism": 0.7690762511669422
+                 },
+                 "description": "Visit 3 of Lower Manhattan's most symbolic sites on this full-day tour. An expert guide offers insightful commentary on the Statue of Liberty, Ellis Island, and the 9/11 Memorial while also leaving you plenty of freedom to explore at your own pace."
+                 },
+                 {
+                 "id": "283177",
+                 "img": "http://a.travel-assets.com/mediavault.le/media/b33ae1bb2bc096c5732088a14e3c95ceea0b0682.gif",
+                 "name": "The Book of Mormon on Broadway",
+                 "distanceFromHotel": 2.45,
+                 "latLng": "40.761075,-73.985756",
+                 "address": "230 W 49th St, New York, NY 10019, USA",
+                 "price": "$155",
+                 "match": 0.8025037889861798,
+                 "rating": 4.31,
+                 "ratingName": "Tyreek Larson",
+                 "ratingDescription": "I love The Book of Mormon on Broadway. It is an amazing place!",
+                 "descriptionLong": "The Book of Mormon has taken the theater world by storm, offering a show that’s irreverently sweet and incredibly smart. Laugh out loud as this award-winning Broadway hit comes to life, combining religious satire with expert choreography and hilarious songs.\nWatch the story unfold as 2 Mormon missionaries arrive in a Ugandan village with completely unrealistic expectations. One missionary, Elder Price, is an enthusiastic go-getter with a strong dedication to his faith, while his partner, Elder Cunningham, is a socially awkward but well meaning nerd whose tendency to embroider the truth soon lands him in trouble. A heavy dose of culture shock and a fair amount of comical naiveté create unexpected and uproarious situations that only the creators of South Park could have dreamed up.\nEnjoy the Grammy-winning soundtrack as the protagonists bumble through their Latter Day responsibilities, eager to share the Book of Mormon—a text that only one of them has read—with villagers more concerned by the violent whims of a manic local warlord. Songs like Turn It Off and Spooky Mormon Hell Dream offer hilarious insight into the missionaries' own inner turmoil. Follow every awkward moment, religious jab, and carefully crafted pun as the play draws toward a climactic ending you have to see for yourself.",
+                 "bookWebsite": "http://www.expedia.com/activities/283177",
+                 "ratings": {
+                 "Openness": 0.9652666128385162,
+                 "Conscientiousness": 0.6210492261468293,
+                 "Extraversion": 0.606817647575647,
+                 "Agreeableness": 0.13452166836973448,
+                 "Neuroticism": 0.1794612197864246
+                 },
+                 "matchRatings": {
+                 "Openness": 0.2345921173445784,
+                 "Conscientiousness": 0.9313616074475042,
+                 "Extraversion": 0.9182795901718769,
+                 "Agreeableness": 0.6520449996777451,
+                 "Neuroticism": 0.9409379025133586
+                 },
+                 "description": "The Book of Mormon has taken the theater world by storm, offering a show that’s irreverently sweet and incredibly smart. Laugh out loud as this award-winning Broadway hit comes to life, combining religious satire with expert choreography and hilarious songs."
+                 },
+                 {
+                 "id": "185508",
+                 "img": "http://a.travel-assets.com/mediavault.le/media/96e76cee32d9e0c0e417a1df9e997d015a73661d.jpeg",
+                 "name": "The Phantom of the Opera on Broadway",
+                 "distanceFromHotel": 3.01,
+                 "latLng": "40.7602619,-73.9932872",
+                 "address": "432 W 44th St, New York, NY 10036, USA",
+                 "price": "$129",
+                 "match": 0.7987711599372819,
+                 "rating": 3.75,
+                 "ratingName": "Tatyana Davis",
+                 "ratingDescription": "I love The Phantom of the Opera on Broadway. It is an amazing place!",
+                 "descriptionLong": "Fall under the spell of this classic yet haunting love story as you journey deep beneath the stage of the Paris Opera House with the Phantom and his beloved soprano—Christine. Winner of 7 Tony Awards® including Best Musical, The Phantom of the Opera is Broadway's longest-running show.\nAt the Paris Opera House, a hideously deformed and masked Phantom lurks beneath the stage. He exercises a reign of terror over the performers at the opera in his quest to turn Christine, the young soprano he loves, into a star. Elaborately costumed actors are illuminated and transport you into a world of intrigue and high drama from the moment the curtain comes up.\nPowerful music, stirring vocals, and poetic lyrics move the action along as the Phantom and Christine glide in a boat across a candlelit stage en route to his underground lair. Songs like the achingly beautiful &quot;Think of Me,” the tender “The Music of the Night,” and the powerful titular number “The Phantom of the Opera” are sure to stir your emotions and keep you on the edge of your seat.\nWith fantastic stage effects, a heartbreaking story line, and the timeless songs of Andrew Lloyd Webber, it's no wonder Phantom has captivated the hearts of millions for more than 25 years.",
+                 "bookWebsite": "http://www.expedia.com/activities/185508",
+                 "ratings": {
+                 "Openness": 0.9880979535058654,
+                 "Conscientiousness": 1,
+                 "Extraversion": 0.5605090423036867,
+                 "Agreeableness": 0.6372914514636129,
+                 "Neuroticism": 0.007293311155146827
+                 },
+                 "matchRatings": {
+                 "Openness": 0.21176077667722915,
+                 "Conscientiousness": 0.6896876186993252,
+                 "Extraversion": 0.9645881954438372,
+                 "Agreeableness": 0.8451852172283765,
+                 "Neuroticism": 0.7687699938820809
+                 },
+                 "description": "Fall under the spell of this classic yet haunting love story as you journey deep beneath the stage of the Paris Opera House with the Phantom and his beloved soprano—Christine. Winner of 7 Tony Awards® including Best Musical, The Phantom of the Opera is Broadway's longest-running show."
                  }
                  ]
 }

@@ -94,7 +94,37 @@ class MainTableViewController: UITableViewController {
     {
       return cell
     }
+    guard let ratingName = dicActivity["ratingName"] else
+    {
+      return cell
+    }
+    guard let ratingDescription = dicActivity["ratingDescription"] else
+    {
+      return cell
+    }
+    guard let match = dicActivity["match"] else
+    {
+      return cell
+    }
+    let doubleScore = match as! Double * 100
+    let percentageScore = Int(doubleScore)
+    guard let image = dicActivity["img"] else
+    {
+      return cell
+    }
+    guard let description = dicActivity["description"] else
+    {
+      return cell
+    }
     cell.lblPriceActivity.text = "\(price)"
+    cell.detailPrice.text = "\(price)"
+    cell.detailName.text = "\(name)"
+    cell.detailRatingName.text = "\(ratingName)"
+    cell.detailRatingDescription.text = "\(ratingDescription)"
+    cell.detailAddress.text = "\(address)"
+    cell.detailMatch.text = "\(percentageScore)%"
+    cell.detailImageCity.image = UIImage(data: NSData(contentsOfURL: NSURL(string: image as! String)!)!)
+    cell.detailDescription.text = "\(description)"
     cell.lblNameActivity.text = "\(name)"
     cell.lblDistanceActivity.text = "\(distanceFromHotel) mi."
     cell.lblAddressActivity.text = "\(address)"

@@ -44,7 +44,7 @@ extension ActivityTableView: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCellWithIdentifier( NSStringFromClass(ActivityCell), forIndexPath: indexPath) as! ActivityCell
         cell.nameLabel?.text = activityList[indexPath.row].name
         cell.distanceLabel.text = String(activityList[indexPath.row].distanceFromHotel) + " miles"
-        cell.profileImageView.image = UIImage(named: "Bitmap")
+        cell.profileImageView.image = UIImage(data: NSData(contentsOfURL: NSURL(string: activityList[indexPath.row].image)!)!)
         cell.rating.rating = Double(activityList[indexPath.row].rating)
         cell.address.text = activityList[indexPath.row].address
         

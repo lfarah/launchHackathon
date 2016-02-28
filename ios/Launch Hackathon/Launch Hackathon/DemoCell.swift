@@ -10,13 +10,16 @@ import UIKit
 
 class DemoCell: FoldingCell {
   
+  @IBOutlet weak var detailAddress: UILabel!
   @IBOutlet weak var viewColor: UIView!
+  @IBOutlet weak var detailDescription: UILabel!
   @IBOutlet weak var cont: UIView!
   @IBOutlet weak var barView: UIView!
   
   
   //Closed cell
   @IBOutlet weak var lblNameActivity: UILabel!
+  @IBOutlet weak var detailImageCity: UIImageView!
   @IBOutlet weak var lblDistanceActivity: UILabel!
   
   @IBOutlet weak var lblAddressActivity: UILabel!
@@ -24,6 +27,11 @@ class DemoCell: FoldingCell {
   @IBOutlet weak var lblPriceActivity: UILabel!
   
   
+  @IBOutlet weak var detailName: UILabel!
+  @IBOutlet weak var detailMatch: UILabel!
+  @IBOutlet weak var detailPrice: UILabel!
+  @IBOutlet weak var detailRatingName: UILabel!
+  @IBOutlet weak var detailRatingDescription: UILabel!
   
   
   

@@ -7,14 +7,15 @@
 //
 
 struct Activity {    
-    var name: String!
-    var distanceFromHotel: Float!
-    var address: String!
-    var price: String!
-    var match: Float!
-    var rating: Float!
-    var ratingName: String!
-    var ratingDescription: String!
-    var description: String!
-    var bookWebsite: String!
+  var name: String!
+  var distanceFromHotel: Float!
+  var address: String!
+  var price: String!
+  var match: Float!
+  var rating: Float!
+  var ratingName: String!
+  var ratingDescription: String!
+  var description: String!
+  var bookWebsite: String!
+  var image:String!
 }
