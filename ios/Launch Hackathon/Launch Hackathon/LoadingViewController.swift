@@ -16,10 +16,12 @@ class LoadingViewController: UIViewController {
   @IBOutlet weak var slider4: UISlider!
   
   let arrCities = ["San Francisco","New York","Los Angeles","Manaus","London"]
-  let arrValues = ["0.0","0.7","0.4","0.9","0.7","1","0.8","0.1"]
-  let arrValues2 = ["0.9","0.9","0.1","0.9","0.2","1","0.5","0.9"]
-  let arrValues3 = ["0.5","0.4","0.4","0.9","0.3","0.3","0.4","0.4"]
-  let arrValues4 = ["0.8","0.1","0.6","0.9","0.5","0.1","0.2","0.7"]
+//  let arrValues = ["0.0","0.7","0.4","0.9","0.7","1","0.8","0.1"]
+//  let arrValues2 = ["0.9","0.9","0.1","0.9","0.2","1","0.5","0.9"]
+//  let arrValues3 = ["0.5","0.4","0.4","0.9","0.3","0.3","0.4","0.4"]
+//  let arrValues4 = ["0.8","0.1","0.6","0.9","0.5","0.1","0.2","0.7"]
+    
+    var times = 8
   
   @IBOutlet weak var spotLoadView: STSpotLoadView!
   
@@ -55,9 +57,9 @@ class LoadingViewController: UIViewController {
         
         }) { (bol) -> Void in
           UIView.animateWithDuration(0.7, animations: { () -> Void in
-            if count < self.arrValues.count
+            if count < self.times
             {
-              self.slider.setValue(self.arrValues[count].toFloat()!, animated: true)
+              self.slider.setValue(self.randomFloat(), animated: true)
             }
             }, completion: nil)
       }
@@ -66,9 +68,9 @@ class LoadingViewController: UIViewController {
         
         }) { (bol) -> Void in
           UIView.animateWithDuration(0.7, animations: { () -> Void in
-            if count < self.arrValues2.count
+            if count < self.times
             {
-              self.slider2.setValue(self.arrValues2[count].toFloat()!, animated: true)
+              self.slider2.setValue(self.randomFloat(), animated: true)
             }
             }, completion: nil)
       }
@@ -77,9 +79,9 @@ class LoadingViewController: UIViewController {
         
         }) { (bol) -> Void in
           UIView.animateWithDuration(0.7, animations: { () -> Void in
-            if count < self.arrValues3.count
+            if count < self.times
             {
-              self.slider3.setValue(self.arrValues3[count].toFloat()!, animated: true)
+              self.slider3.setValue(self.randomFloat(), animated: true)
             }
             }, completion: nil)
       }
@@ -88,9 +90,9 @@ class LoadingViewController: UIViewController {
         
         }) { (bol) -> Void in
           UIView.animateWithDuration(0.7, animations: { () -> Void in
-            if count < self.arrValues4.count
+            if count < self.times
             {
-              self.slider4.setValue(self.arrValues4[count].toFloat()!, animated: true)
+              self.slider4.setValue(self.randomFloat(), animated: true)
             }
             }, completion: nil)
       }
@@ -102,6 +104,10 @@ class LoadingViewController: UIViewController {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
   }
+    
+    func randomFloat() -> Float {
+        return Float(arc4random()) / Float(UINT32_MAX)
+    }
   
   
   /*
